@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+    <html lang="fr">
+        <head>
+            <title>Box-Sizing</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <style>
+                    html{
+            font-size: 62.5%; /* à cause des beug 62.5% = 10px */
+        
+        }
+        body{
+            font-size: 1.4rem; /* 1.4rem = 14px conc enfant body font-size en "em" c'est 1 em = 14px donc 2em = 28px */
+            font-family: arial, helvetica, sans-serif;
+            margin: 0;
+        }
+        h1{ 
+            border: 2px solid crimson;
+            margin-bottom: 0;    
+            padding: 1rem; /*10 px (html font-size) */
+            width: 300px;
+        }
+        p{
+            border: 2px solid gold;
+            width: 300px;
+        }
+        article{
+            border: 2px silver solid;
+            width: 50%;
+            /* pour éviter que ce soit plus petit que 160px */
+            min-width: 160px;
+            /* pour éviter que ce soit plus grand que 600px */
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 1rem;
+            box-sizing:  border-box; /* La largeur calculée sera de px, quelque soient les dorber ou les padding */
+        }
+        article h2{
+            background: coral;
+            width: 160px; /* en %, (cible : 160px  divisé par le contexte:276px) *100 = 57.983*/
+            /* pour centrer un block dans son parent c'est margin : 0 auto; */
+            margin: 0 auto;
+        }
+            </style>
+        </head>
+        <body>
+            <h2>COURS REVISIONS</h2>
+            <br><br>
+            <h3></h3>
+            <p><strong>Liste balise block <em>(100% de la largueur par défaut et les unes en dessous des autres. espace verticale = marges)</em> : </strong>body, div, p, h1 à h6, ul, ol, li, </p>
+            <p><strong>Liste balise block new HTML5 : </strong>section, article, aside, nav, header, footer </p>
+            <p><strong>Liste balise inline : </strong>a, strong, em, span, label, adress</p>
+            <p><strong>Liste balise inline-block : </strong>img, audio, video, canvas, input, select, textarea, </p>
+            <p><strong>Liste balise display:table : </strong>table </p>
+            <p><strong>Liste balise display:table-row : </strong>tr </p>
+            <p><strong>Liste balise display:table-cell : </strong>td </p>
+            <br><br><br>
+            <h3>Les unités de valeurs</h3>
+            <p>Un rem est égale à 1* la valeur d'une font-size définit par la balise HTML. Si on ne change pas la taille de la balise, la taille par défaut c'est 16px.</p>
+            <br><br>
+            <p>1 em est égale à 1 * la valeur de la font-size de sa balise parente</p>
+            <p>Exemple : body = 14px, donc le h1 (2 em par défaut) = 28px. em est </p>
+            <br><br><br>
+            <h3>Reset</h3>
+            <p>Y aller en fonction des besoins. jamais le reset "*" et jamais le reset de "meyer".</p>
+            <br><br>
+            <h3>Les hauteurs</h3>
+            <p>il faut éviter de mettre des height, le contenu s'en charge</p>
+            <p>la taille calculée de la boite "h1" c'est le "width" + "padding" (gauche et droit) + border + (g et d)</p>
+            <br><br><br>
+            <h1>CSS</h1>
+            <p>html, address, blockquote, body, dd, div, dl, dt, fieldset, form, frame, frameset, h1, h2, h3, h4, h5, h6, noframes, ol,
+             p, ul, center, dir, hr, menu, pre { display: block; unicode-bidi: embed } <br>
+             li { display: list-item } <br>
+             head { display: none} <br>
+             table { display: table } <br>
+             tr { display: table-row } <br>
+             thead { display: table-header-group } <br>
+             tbody { display: table-row-group } <br>
+             tfoot { display: table-footer-group } <br>
+             col { display: table-column }br
+             colgroup { display: table-column-group } <br>
+             td, th { display:table-cell } <br>
+             caption { display: table-caption } <br>
+             th { font-weight: bolder; text-align: center } <br>
+             caption { text-align: center} <br>
+             body { margin: 8px } <br>
+             h1 { font-size: 2em; margin: .67em 0 } <br>
+             h2 { font-size: 1.5em; margin: .75em 0 } <br>
+             h3 { font-size: 1.17em; margin: .83em 0 } <br>
+             h4, p, blockquote, ul, fieldset, form, ol, dl, dir, menu { margin: 1.12em 0 } <br>
+             h5 { font-size: .83em; margin:1.5em 0 } <br>
+             h6 { font-size: .75em; margin: 1.67em 0 } <br>
+             h1, h2, h3, h4, h5, h6, b, strong { font-weight: bolder } <br>
+             blockquote{ margin-left: 40px; margin-right: 40px } <br>
+             i, cite, em, var, address { font-style: italic } <br>
+             pre, tt, code, kbd, samp { font-family: monospace } <br>
+             pre { white-space: pre } <br>
+             button, textarea, input, select { display: inline-block } <br>
+             big { font-size: 1.17em } <br>
+            small, sub, sup { font-size: .83em } <br>
+            sub { vertical-align: sub } <br>
+            sup { vertical-align: super } <br>
+            table { border-spacing: 2px; } <br>
+            thead, tbody, tfoot { vertical-align: middle } <br>
+            td, th, tr { vertical-align: inherit } <br>
+            s, strike, del { text-decoration: line-through } <br>
+            hr { border: 1px inset }br
+            ol, ul, dir, menu, dd { margin-left: 40px } <br>
+            ol { list-style-type: decimal } <br>
+            ol ul, ul ol, ul ul, ol ol { margin-top: 0; margin-bottom: 0 } <br>
+            u, ins { text-decoration: underline } <br>
+            br:before { content: "\A"; white-space: pre-line } <br>
+            center { text-align: center } <br>
+            :link, :visited { text-decoration: underline } <br>
+            :focus { outline: thin dotted invert } <br>
+            /* Begin bidirectionality settings (do not change) */ BDO[DIR="ltr"] { direction: ltr; unicode-bidi: bidi-override
+            } <br>
+            BDO[DIR="rtl"] { direction: rtl; unicode-bidi: bidi-override } <br>
+            *[DIR="ltr"] { direction: ltr; unicode-bidi: embed } <br>
+            *[DIR="rtl"]{ direction: rtl; unicode-bidi: embed } <br>
+            @media print { <br>
+            h1 { page-break-before: always } <br>
+            h1, h2, h3, h4, h5, h6 { page-break-after: avoid } <br>
+            ul, ol, dl { page-break-before: avoid } <br>
+             }
+            </p>
+            <br><br><br>
+            <p>reset pour élaguer les différences d'affichage sur les vieux navigateurs. </p>
+            <br><br><br>
+            <article>
+                <h2>histoire du html</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo asperiores accusantium expedita, libero ab inventore soluta fuga dolorem fugit perferendis mollitia porro, sunt doloribus eligendi consequatur atque tempora nihil voluptate?</p>
+            </article>
+        </body>
+    </html>

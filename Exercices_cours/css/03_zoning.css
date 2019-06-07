@@ -1,0 +1,53 @@
+#conteneur{
+    margin: 0 auto;
+    width: 900px;
+    height: 600px;
+    border: 1px solid black;
+}
+header{
+    height: 30px;
+    background-color: darkred;
+    text-align: center;
+}
+.gauche{
+    background-color: blue;
+    width: 200px;
+    height: 550px;
+    float: left;
+    text-align: center;
+    line-height: 530px;
+}
+.milieu{
+    background-color: green;
+    width: 500px;
+    height: 450px;
+    float: left;
+    text-align: center;
+}
+.droite{
+    background-color: blue;
+    width: 200px;
+    height: 550px;
+    float: left;   
+    height: 600px;
+    float: left;
+    text-align: center;   
+    line-height: 530px;
+}
+.Z{
+    width: 98px;
+    border: 1px solid white;
+    height: 500px;
+    float: left;
+}
+.clear{
+    clear: both;
+}
+footer{
+    background-color: yellow;
+    border: 1px solid transparent;
+    width: 500px;
+    height: 100px;
+    margin-left: 200px;
+    text-align: center;   
+}

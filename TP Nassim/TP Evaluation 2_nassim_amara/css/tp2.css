@@ -1,0 +1,64 @@
+/* RESET    */
+
+*{ box-sizing:border-box;
+}
+html{
+    font-size: 62.5%; /* base 10px */
+}
+body{
+    font : 1.4rem/1.5 arial, helvetica, sans-serif;
+    margin: 0;
+}
+.container-fluid{
+    padding: 0;
+}
+header{
+    background : url(../img/background.jpg) no-repeat 50% -170px;
+    background-size: cover;
+    /*height: 600px; TEMPORAIRE */
+    color: white;
+    position: relative;
+}
+footer{
+    background: black;
+    height: 200px; /*temporaire*/
+    color: white;
+}
+/* CONTENU DE HEADER */
+
+/* la nav */
+nav{
+    border: 2px green solid;
+    background-color: rgba(0, 0, 0, .5);
+    line-height: 5; /* ici c'est normal de ne pas donner d'unité */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    border: 2px orchid solid;
+}
+nav li{
+border: 2px gold solid;
+}
+nav{
+    position: absolute;
+}
+.bienvenue{
+     text-align: center;
+    color: white;
+}
+.location{
+    text-align: center;
+    color: white;
+    font-size: 40%;
+}
+.photo_vehicule1{
+    float:left;
+}
+.prix{
+    float:left;
+}

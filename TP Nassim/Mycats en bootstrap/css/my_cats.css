@@ -1,0 +1,66 @@
+/* REGLAGES GENERAUX */
+.container-fluid{
+    padding: 0;   /* BS A UN bootstrap automatiquement,il faut donc lui mettre un padding 0*/
+}
+header{
+    background: brown;
+    height: 10rem;
+    background: url('../img/background.jpg');
+}
+nav{
+    background: #061339;
+    color:white;
+}
+nav a{
+    color:#fff;
+    font-family: 'Merienda', cursive;
+}
+#FormSlide{
+    background: rgb(28, 55, 122);
+}
+#slider{
+    /* background: green;
+    height: 5rem; */
+    padding: 1rem;
+}
+#form{
+    /* background: purple;
+    height: 10rem; */
+    padding: 2rem;
+}
+#logo{
+    background: whitesmoke;
+}
+#txt{
+    background: rgb(131, 103, 131);
+    height: 20rem;
+}
+.chat{
+    background: bisque;
+    /* height: 5rem; */
+}
+.chat img{
+    vertical-align: middle;
+    border-style: none;
+    height: 13rem;
+    background: #7885A5; 
+}
+.chat img:hover{
+    background: #061339;  
+}
+footer{
+    background: #061339;
+    height: 3rem;
+}
+footer span{
+    color: white;
+    /* margin-left: 80%; autre methode */
+    display : flex;
+    justify-content: end;
+}
+.form-group button{
+    margin-top: 0.5rem; /*1rem vaut 10px*/ 
+}
+span{
+    font-family: 'Merienda', cursive;
+}

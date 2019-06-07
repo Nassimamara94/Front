@@ -1,0 +1,179 @@
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+} 
+body{
+     background: url(../images/bengal.jpg);
+     font-family: 'ZCOOL KuaiLe', cursive;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+nav{
+    width: 100%;
+    height: 40px;
+    border: 1px dashed #0000cc; 
+    margin: 0 auto;
+    background: url(../images/bengal.jpg); 
+}
+nav a{
+    width: 10%;
+    height: 38px;
+    float: left;
+    text-decoration: none;
+    line-height: 40px;
+    margin-left: 5%;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff8080;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 1px rgb(19, 18, 18);
+}
+nav a:hover{
+    background: lightblue;
+}
+.container1{
+    width: 100%;
+    border: 3px groove #ff8080; 
+    margin: 20px auto;
+     background: url(../images/bengal.jpg);
+}
+h3{
+    font-weight: unset;
+    word-spacing: 1px;
+    text-decoration: line-through;
+    font-size: 1.3em;
+    color: teal;
+}
+h4{
+    font-weight: italic;
+    word-spacing: 1px;
+    text-decoration: underline;
+    font-size: 1.1em;
+    color: sienna;
+}
+.container1 li{
+    padding-left: 50px; 
+    text-decoration: none;
+}
+.container2{
+    width: 100%;
+    border: 3px groove #4e1547;
+    margin: 20px auto;
+     background: url(../images/lys.jpg);
+     color: white;
+     text-decoration-style: wavy;   
+}
+.container2 ol{
+    text-align: justify;
+    line-height: 2em;
+    text-indent: 30px;
+}
+.container3{
+    width: 100%;
+    border: 3px double #238676;
+    margin: 20px auto;
+     background: url(../images/image.jpg);
+}
+.container3 ol{
+    text-decoration-style: dotted;
+    font-family: fantasy;
+    color: seagreen;
+    font-size: 2em;
+}
+li :nth-child(even){
+    color: red;
+    font-size: 2em;
+}  */
+*{
+   font-family: sans-serif; / *police d'écriture*/
+}
+
+nav{
+   background: #000;
+   color: #fff;
+   padding: 0 0.5em;
+   position: fixed;
+   text-align: center;
+   width: 100%;
+   top: 0; / *position à partir du haut de l'écran*/
+   left: 0; / *position à partir de la gauche de l'écran*/
+   margin: 0;
+}
+
+nav a{ /* tous les liens à l'intérieur de la balise nav */
+   float: left; /* effet flottant à gauche */
+   text-decoration: none; /* pas d'héritage avec effet souligné comme c'est standard pour les liens sous tous les navigateurs */
+   color: #fff; /* couleur du texte */
+   background: #000; /* couleur de fond */
+   height: 2.8em; /* hauteur de la nav */
+   line-height: 2.7em; /* interligne */
+   padding: 0em 2em; /* marges intérieures - on les fait dans le sens des aiguilles d'une montre par convention (haut, droite, bas, gauche) */
+   font-size: 1.2em; /* taille du texte */
+   transition: 2s;/* temps de transition lors du hover (survol de la souris) : ici 2 secondes */
+}
+nav a:hover{/* tous les liens au survol de la souris dans la nav */
+   background: #fda500; /* couleur de fond */
+   color: #000; /* couleur du texte */
+}
+
+/*1er container*/
+.container{
+   width: 70%;
+   margin: 4% auto 2% auto;
+   background: #f1fcde;
+   padding: 2em;
+}
+
+mark{
+   background: #b5a7cf;
+}
+
+/*2ème container*/
+
+width: 70%;
+   margin: 2% auto; /*contraction pour 2% auto 2% auto*/
+   background: #f0e9fd;
+   padding: 2%;
+}
+
+/*containers 3 et 4 imbriqués dans le container1*/
+.container2, .container3{
+   width: 44.5%;
+   background: #f1fcde;
+   padding: 2%;
+   float: left;
+}
+.container2{
+   margin-right: 1.5%;
+}
+.container3{
+   margin-left: 1.5%;
+}
+
+/*5ème container*/
+.container4{
+   margin-top: 2em;
+}
+
+.clear{
+   clear: both;
+}

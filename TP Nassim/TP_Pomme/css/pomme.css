@@ -1,0 +1,76 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+#container{
+    width: 950px;
+    height: 1900px;
+    margin: 0 auto;
+    background: white;
+    border: 2px solid rgb(30, 204, 30);
+}
+
+header{
+    height: 258px;
+    width: 100%;
+}
+.bouton{
+    height: 35px;
+    width: 156px;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    background-color: aquamarine;
+    background: url(../images/bg_menu.gif)repeat 0 -25px;
+    float: left;
+    text-align: center;
+}
+.titre{
+    float:right;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+.colonne_gauche{
+    width: 90px;
+    height: 750px;
+    padding-top: 30px;
+    padding-left: 15px;
+    float: left;
+}
+.longue{
+    width: 700px;
+    height: 32px;
+    left: 60px;
+    float: left;
+}
+.centrale{
+    width: 840px;
+    height: 398px;
+    text-align: justify;
+} 
+/* .texte{
+    color: green;
+    border-bottom: 1px solid green;
+    float: left;
+} */
+.clear{
+    clear: both;
+}
+p{
+    padding-top: 5px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Mozilla</title>
+            <style>
+                *{
+                    box-sizing: border-box;                    
+                }
+                html{
+                    font-size: 62.5%; /* 10px */
+                }
+                 body{
+                    background: blue;
+                    font: 1.4em/1.2 arial, helvetica, sans-serif; /* font-*size line-height font-family*/
+                    margin: 0;
+                }
+                .container{
+                    width: 80%;
+                    margin: 0 auto;
+                    background: orange;
+                    padding: 2rem;
+                    border: 3px solid black;
+                }
+                h1{
+                    /* font-size : 2em; par defaut soit 20px */
+                    font-weight: bolder;
+                    color: steelblue;
+                    text-shadow:2px 2px gray;
+                    text-align: center;
+                    background: bisque;
+                   }
+                img{
+                margin: 0 auto;
+                display: block;
+                }
+            </style>
+        </head>
+        <body>
+            <main class="container">
+                <h1>Mozilla est cool !<span>Sarah</span></h1>
+                <img src="images/logo_firefox_1.png" class="logo1" alt="">
+                <!-- <img src="images/logo_firefox_2.png" class="logo2" alt=""> -->
+                <section>
+                    <p>Mozilla, nous sommes une communauté globales</p>
+                    <ul>
+                        <li>Technologists</li>
+                        <li>Thinkers</li>
+                        <li>Builders</li>
+                    </ul>
+                    <p>La fonction <strong>definirMonUtilisateur</strong> cette fonction utilise la méthode() prompt qui affiche une boîte de dialogue, un peu comme une alert, sauf qu'elle permet à l'utiliateur de rentrer des données et de les enregistrées dans une variavble quand l'utilisateur click sur OK. <br> Dans cette exemple on demande à l'utilisateur de saisir son nom, ensuite nous appelons <strong>l'API localStorage</strong> qui permet de stocker des données dans le navigateur pour pouvoir les réutilisées ultérieurement. <br><br> Nous utilisons la fonction .setItem de cet API pour stocker la donnée qui nous intéresse dans un conteneur appelé nomUtilisateur. <br><br> La valeur stcockée ici est la valeur de la variable monNom qui contient le nom, saisi par l'utilisateur dans le prompt. <br><br> Au final on utilise la propriétée .textContent de  monTitre pour lui affecter un nouveau contenu.</p>
+            
+                    <p>Le bloc de la condition if else utilise l'opérateur de la négation NOT "!" pour vérifier si le navigateur possède une donnée appelé nomUtilisateur ou pas. <br> <br> Sinon la fonction definirMonUtilisateur est invoquée pour créer cette donnée. <br><br> Si elle exige "ce qui correspond au cas ou l'utilisateur est déjà venu sur la page, on récupère avec la méthode .getItem()". <br>Pour finir on définit le contenu de .textContent pour le titre avec une concaténation de chaine suivie du nom de l'utilisateur. <br> <br>Enfin, on associe le gestionnaire d'événement click boutton. Quand l'utilisateur cliquera sur le boutton,ça déclenchera l'éxécution de la fonction definirMonUtilisateur(); <br><br>Ce boutton permet donc à l'utilisateur de modifier son nom s'il le souhaite.</p>
+                    <button>Changer d'utilisateur</button>
+                </section>
+            </main>
+            <script src="javascript/mozilla.js"></script>
+        </body>
+    </html>

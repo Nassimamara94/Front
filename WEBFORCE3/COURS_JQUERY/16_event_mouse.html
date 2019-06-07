@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>QUEL BOUTON EST PRESSER PAR LA SOURIS</h1>
+        <img src="images/boat.jpg" class="cible" alt="">
+        <p class="info"></p>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script>
+            $(function () {
+                console.log('hello');
+                // 1. click sur la photo
+                $('.cible').mousedown(function(ev){
+                // $('.info').html('coucou');   
+                //2. dans .info afficher le type de l'événement (mousedown) appliquer à .cible
+                // $('.info').html(ev.type);
+                // affiche le numéro du bouton de la souris gauche = 1, milieu = 2, doit = 3
+                // $('.info').html(ev.which);
+                $('.info').html( "c'est un événement de type " + ev.type + " et c'est le bouton de souris numéro ° " + ev.which);
+                })
+              
+
+            })
+        </script>
+        
+    </body>
+    </html>

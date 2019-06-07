@@ -1,0 +1,25 @@
+.container{
+    background: purple;
+    height: 85vh;
+    width: 31vw;
+    margin: 0 auto;
+}
+header{
+    background: black;
+    height: 15vh;
+}
+nav{
+    background: red;
+    height: 50vh;
+}
+main{
+    background: orange;
+    height: 45vh;
+    width: 80%;
+    margin: 0 auto;
+    background: 2px solid white;
+}
+footer{
+    height: 15vh;
+    background: green;
+}

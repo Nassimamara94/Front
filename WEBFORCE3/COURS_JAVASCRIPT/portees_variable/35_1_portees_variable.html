@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portées variable</title>
+</head>
+<body>
+    <h1>Portées des fonctions et les conflits</h1>
+    <p>La portée est un concept très important en JS, lorsqu'on a affaire à des fonctions. Quand on crée des fonctions, les variables
+    et autres choses qui sont définies à l'intérieur de la fonction ont leurs propres portées. Ce qui signifie qu'elles sont
+    enfermées dans leur propre compartiment séparé et qu'elles ne peuvent pas être affectées par d'autres fonctions ou par le
+    code en dehors de la fonction. (métaphore zoo, chaque animal à son propre enclos)</p>
+    <p>Le plus haut niveau en dehors de toutes vos fonctions est appelé le porté global. les valeurs définies dans la portée globale sont accessibles à partir de n'importe quelle partie du code (le gardien du zoo à toutes les clés).</p>
+    <p>Le JS est construit de cette façon en partie pour des raisons de sécutité et l'organisation. <br> Parfois vous ne voulez pas que vos variables soient accessibles depuis toutes les autres parties du code. Exemple script externe appelés depuis l'exterieur de la fonction pourraient interférer avec votre code et causés des problèmes, parce qu'ils utilisent les même noms de variables que d'aure partie du code. Peut être fait par malveillance ou accident.</p>
+    <p>par exemple on va avoir un fichier HTML qi apelle 2 fichiers JS externes, et que les 2 ont une variable et une fonction définit qui utilisent le même nom.</p>
+
+    <script src="js/01_script.js"></script>
+    <script src="js/02_script.js"></script>
+    <script>
+        ditSalut();
+        // un peut être df=éfinit dans un script interne ou extetrne
+        // les parenthèses exécutent la fonction
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+   margin: 0 auto; /* On peut donc demander à ce que le bloc soit centré avec auto */
+   text-align: center;
+   background: white;
+   width: 80%; /* On a indiqué une largeur (obligatoire) */ 
+   font-family: "Cormorant Garamont",serif; 
+  
+}
+header{
+  width: 50%;
+  margin: 10% auto 5%; /*haut- droit et gauche - bas*/
+}
+  section{
+    width: 100%;
+    display: inline-block;
+}
+.salle1, .salle2, .sallee3, .rectangle4{
+  width: 468px;
+  height: 248px;
+  border: 1px solid;
+  float: left;
+  line-height: 122px;
+}

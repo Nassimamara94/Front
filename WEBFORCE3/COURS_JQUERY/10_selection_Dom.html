@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Selection</title>
+        </head>
+        <style>           
+
+            .container{
+                width: 70%;
+                margin: 0 auto;
+                border: 2px solid darkred;
+                padding: 2rem; 
+            }
+            .textRouge{
+                color: red;
+                font-weight: bolder;
+            }
+        </style>
+        <body>
+            <div class="container">
+                <div class="colLeft">
+                    <h2 class="titreSite"><a href="#">WF3 / PoleS</a></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="ressources.pdf">ressources</a>
+                </div> <!--FIN DIV GAUCHE-->
+                <div class="colRight">
+                    <h2 class="titleChapter">je suis un chapitre 2</h2>
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <form action="#" method="POST">
+                        <label for="date">Voutre date de naissance</label>
+                        <input type="date" name="date" id="">
+                        <input type="submit" value="Envoyez">
+                    </form>
+                </div><!--FIN DIV DROITE-->
+            </div> <!--FIN DIV CONTAINER-->
+            <script src="js/jquery-3.3.1.min.js"></script>
+            <script>
+                $(function(){
+                    console.log('hello');
+                    /* selectionne la ou les div class='container'
+                    1. $('div.container')
+                    2. $('.container')
+                    Dans une var monElement = les éléments avec la class container
+                    */
+                     var monElement = $('.container');  
+                    //  sélectionne tous les enfants direct, div .colLeft et .colRight 
+                     console.log(monElement.children());   
+                     // selectionne la div .colLeft    
+                     console.log(monElement.children('.colLeft'));   
+                        // sélectionne l'élement numéro 1 de la div .container qui est colRight 
+                     console.log(monElement.children().eq(1)); 
+                        //   selectionne tous les h2 parmi tous les déscendants 
+                     console.log(monElement.children().find('h2')); 
+                    //  sélectionne le p avec la class='para'
+                      var monPara = $('p.para'); 
+                      console.log(monPara);
+                    //   sélectionne le voisin suivant de p avec la class='para', ici le formulaire
+                      monPara.next(); 
+                    //   ici renvoi object vide car rien apres le form 
+                    console.log(monPara.next().next());
+                
+                    // sélectionne le voisin précédent de p  avec la class='para', ici le h2 titleChapter
+                      monPara.prev();  
+                      console.log(monPara.prev());
+                    // sélectionne le parent de p avec la class='para', ici le div .colRight
+                      monPara.parent();  
+                      console.log(monPara.parent());      
+                    // nombre de lien dans la page
+                    console.log($('a').length);
+                    // nombre de lien dans la page                    
+                    console.log($('h2.titleChapter').length);
+                    
+                    // élément dont l'attribut href commence par un diese #
+                    console.log($('a[href $="pdf"]').length);
+                    $('a[href $=".pdf"]').hover(function(){
+                          $(this).toggleClass('textRouge');
+                    })
+
+                    // élément dont l'attribut href est égale à un diese #
+                    console.log($('a[href ="#"]').length);
+                 
+                    // élément dont l'attribut href est égale à un diese #
+                    console.log($('a[href ="#"]').length);
+
+                    
+
+                })
+            </script>
+        </body>
+    </html>

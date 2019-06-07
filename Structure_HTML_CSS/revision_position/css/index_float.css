@@ -1,0 +1,31 @@
+body{
+    margin: 0 ;
+    padding: 0;
+    background: url(../images/bkg.jpg);
+    border: 25px solid black;
+}
+#container{
+    width: 80%;
+}
+.float{
+    width: 10%;
+    height: 150px;
+    background: linear-gradient(to top left, #40a497,#ffb3ff, #6840a4);
+    border: 1px solid black;
+    float: right;  
+    margin: 50px auto;
+    margin-left: 10px;
+}
+.clear{
+    clear: both;
+}
+.float:hover{
+    border-radius: 90% 90%; 
+}
+h1{
+    margin: 0 auto;
+    width: 80%;
+    font-size: 20em;
+    color: tomato;
+    font-style: italic;
+}

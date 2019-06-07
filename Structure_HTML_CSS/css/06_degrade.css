@@ -1,0 +1,29 @@
+.contenu{
+background: linear-gradient(to left, #40a497, #6840a4); /* dégradé qui démarre avec la prmière couleur et finit avec la seconde de haut en bas par défaut, mais ici on a ajouté TO left qui effectue de gauche à droiteb */
+width: 45em; /* em unité utilisé pour que se soit responsive */ 
+height: 45em;
+margin: 0 auto; /* pas de marges en haut et bas avec valeur 0, la valeur auto laisse au navigateur centrer l'élémznt*/
+border-radius: 50%; /*propriété qui permet d'arrondir plus ou moins les angles*/
+}
+.contenu1{  
+    width: 40em;
+    height: 40em;
+    border-radius: 40%;
+    background: linear-gradient(to right, #40a497,#ffb3ff, #6840a4);
+    margin: 80px auto;
+}
+.contenu2{
+    width: 40em;
+    height: 40em;
+    border-radius: 10% 20% 30% 40%;
+    background: linear-gradient(to top, #40a497,#ffb3ff, #6840a4);
+    margin: 80px auto;
+    padding: 10em auto;
+}
+.contenu3{
+    width: 60px;
+    height: 30px;
+    border-radius: 60px / 40px;
+    background: linear-gradient(to top left, #40a497,#ffb3ff, #6840a4); 
+    margin: 30px auto;         
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Affiche / Masque  </title>
+        <p>Quand on utilise la propriété transform, le point transformer est au centre par défaut transform : 50% 50%;</p>
+        <p>on peut changer le centre de transform avec  transform-origin : </p>
+    </head>
+    <style>
+        .listeFruits{
+            background-color: firebrick;
+            transform: scale(0);
+            transform-origin: 0 0 ;
+            transition: 1s;           
+        }
+        .affiche{
+            transform: scale(1);
+        }
+    
+    </style>
+    <body>
+        <h1> Affiche / Masque</h1>
+        <ul class="listeFruits">
+            <li>Pommes</li>
+            <li>Bananes</li>
+            <li>Fraises</li>
+            <li>Mangues</li>
+            <li>Figues</li>
+        </ul>
+        <button class="btn">Cliquez</button>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script>
+            $(function(){                
+
+            $('.btn').on('click', function(){
+                $('.listeFruits').toggleClass('affiche');
+            })
+               /*
+               
+               CORRECTION
+               var afficheCache = function(){
+                   $('.listeFruits').toggleClass('affiche');
+               }
+               $('.btn').on('click', afficheCache);               
+               
+               */
+                
+            })
+
+        </script>
+        
+    </body>
+</html>

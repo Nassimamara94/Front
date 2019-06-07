@@ -1,0 +1,22 @@
+body{
+    margin: 0 auto;
+}
+table,td{
+    margin: 50px auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+  
+}
+td{
+    border: 1px solid black;
+    width: 100px;
+    height: 70px;
+    text-align: center;
+}
+.espace9{
+    color: red;
+    font-weight: bold;
+    font-size: 1.5em;
+    vertical-align: 0px;
+}
+

@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+.container-fluid{
+    background: rgb(160, 155, 155);
+    height:35rem;
+    padding: 0;
+}
+header{
+    background: rgb(139, 63, 0);
+    height: 10rem;
+}
+nav{
+    background: rgb(255, 0, 106);
+    height: 4rem;
+    border: 3px blue solid;
+}
+main{
+    background: red ;
+    height: 10rem;
+}
+footer{
+    background:green;
+    height: 3rem;
+}
+
+#tata{
+    background: rgb(80, 41, 116);
+    height:10rem;
+}
+#pipi{
+    background: rgb(0, 238, 255);
+    height:10rem;
+}

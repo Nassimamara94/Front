@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EXERCICE avec La boucle while et break </title>
+</head>
+
+<body>
+    <h1>EXERCICE avec La boucle while et break </h1>
+    <p>break met fin à la boucle </p>
+    <pre>
+         var prenoms = '', prenom, proceed = true;
+         while (proceed) { 
+             prenom = prompt("saisissez un prénom ?");
+             if (prenom) { 
+                 prenoms += prenom + ' ';
+                } else { 
+                    proceed = break; 
+                 }
+                 } // fin de la boucle while 
+                 
+    document.write(prenoms);
+
+    </pre>
+    <script>
+
+        var prenoms = '', prenom;
+        //  ICI ON A UNE BOUCLE INFINI 
+
+        // while(proceed){
+        //        prenom =  prompt("saisissez un prénom ?");
+        //     }
+        //     alert(prenom);
+        while (true) {
+            prenom = prompt("saisissez un prénom ?");
+            /* ici on va tester si l'utilisateur entre un prénom dans le prompt alors on ajoute ce prénom dans le tableau prénoms. 
+            Sinonon arrête la boucle. En mettant la variable proceed à false.
+
+            */
+            if (prenom) {
+                prenoms += prenom + '<br> '; // on ajoute le nouveau prénom au tableau prenoms 
+            } else {
+                break; // si aucun prénom entrer, on arrête la boucle en mettant "proceed = break"
+            }
+
+        } // fin de la boucle while
+        document.write(prenoms); // affiche les prénoms les uns à la suite des autres 
+    </script>
+
+</body>
+
+</html>

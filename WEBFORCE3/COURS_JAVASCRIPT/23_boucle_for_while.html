@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Les boucles</title>
+    </head>
+    <body>
+        <h1>Les boucles</h1>
+        <p>Les instructions for et while qui sont 2 types de boucles les plus utilisées en js, servent à répéter plusiseurs ligne de
+        code.</p>
+        <h2>Le boucle For</h2>
+        <p>For prends 3 paramètres encadrés dans des parenthèses, suivi entre accolades des instructions à exécuter autant de fois que la boucle l'indique. Les paramètres sont:</p> 
+        <ul>
+            <li>Initialisation : ici on déclare la variable qui servira de compteur</li>
+            <li>condition: <strong>tant que cette condition est vraie</strong> la boucle s'executera</li>
+            <li>Expression final: xpression qui est executer à chaque fin de boucle.</li>
+        </ul>
+        <code>
+            for(initialisation; condition; incrémentation){ <br>
+               instruction 1; <br>
+               instruction 2; <br>
+            }
+        </code> <br> <hr>
+        <h2>Autre exemple de boucle</h2> 
+        <code>
+             tableau = ['(chien', 'chat', 'souris', 'lapin', 'tortue'];            
+        </code>
+        <p>tableau.length nous permettra de récupérer le nombre d'éléments que le tableau contient.</p>
+        <br><br><hr>
+        <h2>convertir tous les objet d'un tableau en majuscule et les afficher</h2>
+        <code>
+             var noms = ["fred", " marc", " habib", " samira"]; upper = []; for(var k = 0, n = noms.length; k < n; k++){ upper[k]=n oms[k].toUpperCase();
+                } document.write(upper + '<br>');
+        </code>
+        <br><br><hr>
+        <h2> affiche chacune des valeur du tableau</h2>
+        <code>
+             tableau = ['chien', ' chat', ' souris', ' lapin', ' tortue']; for(var j = 0; j < tableau.length; j++){ // affiche chacune
+                des valeur du tableau document.write(tableau[j]); 
+             }
+        </code>
+
+        <script>
+            for(var i = 0; i < 5; i++){
+                document.write(i + '<br>');
+            }
+            // 1. dans l'ordre on initialise la var i = 0;
+            // 2. ensuite tant que i < 5 ; on éxécute la boucle 
+            // 3. ensuite à chaque fin de boucle on incrément de 1 : i++;
+
+            tableau = ['chien', ' chat', ' souris', ' lapin', ' tortue'];
+            for(var j = 0; j < tableau.length; j++){
+                // affiche chacune des valeur du tableau
+                document.write(tableau[j]);
+            }
+
+            // convertir tous les objet d'un tableau en majuscule et les afficher 
+            var noms = ["fred", " marc", " habib", " samira"];
+            upper = [];
+             for(var k = 0, n = noms.length; k < n; k++){
+                    upper[k] = noms[k].toUpperCase();
+                }
+                    document.write(upper + '<br>');
+            // dernière boucle for 
+            for(m = 0; m < 10; m++){
+                // alert("m contient la valeur " + m);
+            }   
+                
+
+
+
+          
+        </script>
+    </body>
+    </html>

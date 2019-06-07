@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Position Absolute</title>
+            <style>
+                body{
+                    box-sizing: border-box;
+                }
+                .container{
+                    width: 80%;
+                    padding: 122px 2rem 0;
+                    border: 1px dashed hotpink;
+                    position: relative;
+                }
+                .container p:nth-of-type(1){
+                    position: relative;
+
+                    color: lightcoral
+
+                }
+                .badge{
+                    width: 80px;
+                    /* height: 80px; */
+                    background: lightblue;
+                    border-radius: 50%;
+                    padding: 5px;  
+                    display: inline-block;
+                    text-align: center;
+                    line-height: 80px; 
+                    position: absolute;
+                    left: -2
+                    5px;
+                    top: 100px;                 
+                }
+                nav{
+                    border-bottom: navy solid 3px;
+                    padding: 1rem;
+                    position: fixed;
+                    background: rgb(0, 0, 0,0.5);
+                    color: white;
+                    width: 100%;
+                }
+                nav ul{
+                    padding-left: 0;
+                    display: flex;
+                    justify-content: space-around;
+                }
+                nav ul li{
+                    list-style-type: none;
+                    border: 1px  solid crimson;
+                    padding: 1rem;
+                }
+                .carre{
+                    width: 100px;
+                    height: 100px;
+                    display: inline-block;
+                    text-decoration: none;
+                    color: white;
+                    background: lightcoral;
+                    text-align: center;
+                    line-height: 100px;
+                    position: absolute;
+                    right: 40px;  
+                    top: 160px; 
+                    z-index: 3;
+                }
+                .rond{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50px;
+                    display: inline-block;
+                    text-decoration: none;
+                    color: white;
+                    background: lightblue;
+                    text-align: center;
+                    line-height: 100px; 
+                    position: absolute;
+                    right: -25px;  
+                    top: 100px;    
+                    z-index: 2;      
+                }
+                .triangle{
+                    width: 0;
+                    height: 0;
+                    border-right: solid 40px transparent;
+                    border-left: solid 40px transparent;
+                    border-bottom: solid 100px rgb(200,30,50);
+                    position: absolute;
+                    right: -25px;  
+                    top: 180px;
+                    z-index: 1;    
+                    display: block;   
+                    text-decoration: none;
+                    color: white;
+                    text-align: center; 
+                    font-size: .5%;
+                    line-height: 150px;            
+                }
+
+            
+            </style>
+        </head>
+        <body>
+            <h3>Position Absolute</h3>
+            <p>Un élément absolute est positioné par rapport à son 1er ancetre positione, et s'il n'a pas d'ancetre il sera place par rapport au body.</p>
+            <p><strong>Valeur propriété position :</strong>par défaut = static (ne sont pas positionées et restent dans le flux). Relative = sera positioné par rapport à son emplacement naturel dans le flux (comme s'il avait une marge), son emplacement est réservé. Un élément relatif devient cadre de positionnement pour ses enfants absolute.
+            Dans notre contexe, on va donner une position: relative; au 1er p pour que le badge en absolute soit calé par rapport à ce p. Fixed = un élément fixed sera callé par rapport au viewport (ecran). Même si la page scroll, l'élément en position fixed, ne bouge pas !</p>
+            <p>Mettre le 1er p en relative, fait que le badge soit posituoné de façon absolute par rapport à lui (1er p).</p>
+            
+            <br><hr><br><br>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Galerie</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+            <div class="container">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque culpa earum illum aspernatur sint tempore optio voluptates laboriosam, quae et impedit ducimus? Tempora provident nihil quisquam vel recusandae illum dolorum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque culpa earum illum aspernatur sint tempore optio voluptates laboriosam, quae et impedit ducimus? Tempora provident nihil quisquam vel recusandae illum dolorum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque culpa earum illum aspernatur sint tempore optio voluptates laboriosam, quae et impedit ducimus? Tempora provident nihil quisquam vel recusandae illum dolorum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque culpa earum illum aspernatur sint tempore optio voluptates laboriosam, quae et impedit ducimus? Tempora provident nihil quisquam vel recusandae illum dolorum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque culpa earum illum aspernatur sint tempore optio voluptates laboriosam, quae et impedit ducimus? Tempora provident nihil quisquam vel recusandae illum dolorum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="badge">new</span> In tempora officiis et eligendi neque exercitationem assumenda nulla atque delectus vitae nobis, sit quisquam sint fugit accusamus doloribus repellendus fugiat! At.</p>
+                <a href="#" class="carre">Carre</a>
+                <a href="#" class="rond">Rond</a>
+                <a href="#" class="triangle">Triangle</a>
+            </div>
+            
+        </body>
+    </html>

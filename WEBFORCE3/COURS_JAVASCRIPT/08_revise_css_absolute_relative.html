@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Document</title>
+            <style>
+                body{
+                        box-sizing: border-box;
+                        margin: 0;
+                    }
+                 .container{
+                    width: 70%;
+                    margin: 0 auto;
+                    border: 1px dotted darkred; 
+                    position: relative;
+                    }
+                    .forme{
+                        display: block;
+                        /* cache le texte - il est hors champs */
+                        text-indent: -10000px;
+                        position: absolute;                                        
+                    }
+                    .carre{
+                        width: 80px;
+                        height: 80px;
+                        background: lightgreen;
+                        right: 0;
+                        top: 50%;
+                        z-index: 2;
+                    }
+                    .rond{
+                        width: 80px;
+                        height: 80px;
+                        background: gold;
+                        border-radius: 50%;
+                        top: 50%;
+                        right: -40px;
+
+                        /* z-index: 1; pas besoin de zone index si c'est lélément le plus en dessous */
+                    }
+                    .triangle{
+                        width: 0px;
+                        height: 0px;
+                        text-indent: -10000px;
+                        border: 50px coral solid;
+                        border-color: transparent transparent transparent coral;
+                        top: 50%;
+                        right: -44px;
+                        z-index: 3;                       
+                    }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque culpa earum illum aspernatur sint tempore optio voluptates
+                    laboriosam, quae et impedit ducimus? Tempora provident nihil quisquam vel recusandae illum dolorum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque culpa earum illum aspernatur sint tempore optio voluptates
+                    laboriosam, quae et impedit ducimus? Tempora provident nihil quisquam vel recusandae illum dolorum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque culpa earum illum aspernatur sint tempore optio voluptates
+                    laboriosam, quae et impedit ducimus? Tempora provident nihil quisquam vel recusandae illum dolorum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque culpa earum illum aspernatur sint tempore optio voluptates
+                    laboriosam, quae et impedit ducimus? Tempora provident nihil quisquam vel recusandae illum dolorum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque culpa earum illum aspernatur sint tempore optio voluptates
+                    laboriosam, quae et impedit ducimus? Tempora provident nihil quisquam vel recusandae illum dolorum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque culpa earum illum aspernatur sint tempore optio voluptates
+                    laboriosam, quae et impedit ducimus? Tempora provident nihil quisquam vel recusandae illum dolorum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque culpa earum illum aspernatur sint tempore optio voluptates
+                    laboriosam, quae et impedit ducimus? Tempora provident nihil quisquam vel recusandae illum dolorum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque culpa earum illum aspernatur sint tempore optio voluptates
+                    laboriosam, quae et impedit ducimus? Tempora provident nihil quisquam vel recusandae illum dolorum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque culpa earum illum aspernatur sint tempore optio voluptates
+                    laboriosam, quae et impedit ducimus? Tempora provident nihil quisquam vel recusandae illum dolorum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque culpa earum illum aspernatur sint tempore optio voluptates
+                    laboriosam, quae et impedit ducimus? Tempora provident nihil quisquam vel recusandae illum dolorum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque culpa earum illum aspernatur sint tempore optio voluptates
+                    laboriosam, quae et impedit ducimus? Tempora provident nihil quisquam vel recusandae illum dolorum?</p>
+                    <a href="#" class="forme carre">carre</a>
+                    <a href="#" class="forme rond">rond</a>               
+                    <a href="#" class="forme triangle">triangle</a>               
+                </div>
+            
+        </body>
+    </html>

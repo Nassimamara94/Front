@@ -1,0 +1,17 @@
+var a = 2;
+a = a - 1;
+a++;
+var b = 8;
+b += 2;
+var c = a + b * b;
+d = a * b + b;
+e = a * (b + b);
+f = a * b / a;
+g = b / a * a;
+console.log( a);
+console.log( b);
+console.log( c);
+console.log( d);
+console.log( e);
+console.log( f);
+console.log( g);

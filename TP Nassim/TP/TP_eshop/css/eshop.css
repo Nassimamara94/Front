@@ -1,0 +1,113 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.row1{
+    color: #fff;
+    background: rgb(99, 95, 95);
+    text-align: center;
+    font-weight: 700;
+    padding: 5px;
+    letter-spacing: 0.1em;
+}
+/* HEADER */
+.header{
+    background: rgb(243, 240, 240);
+}
+#logo{
+    margin-top: 15px;
+}
+.elegance{
+    color:  rgb(99, 95, 95);
+    font-style: oblique;
+}
+.devis, .conseil, .connecter, .panier{
+    width: 50%;
+    height: 50px;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 1px solid  rgb(216, 213, 213);
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.devis img, .connecter img, .conseil img, .panier img{
+    width: 50px;
+    height: 40px;
+    margin: 5px;
+}
+.clear{
+    clear: both;
+}
+.devis img, .devisTexte{
+    float: left;
+}
+.connecter img, .connecterTexte{
+    float: left; 
+}
+.conseil img, .conseilTexte{
+    float: left;
+}
+.panier, .panierTexte{
+    float: left;
+}
+.devis p, .conseil p{
+    margin-left: 10px;
+}
+.connecter p, .panier p{
+    margin-right: 60px;
+}
+/* NAV */
+nav ul li{
+    float: left;
+    line-height: 45px; 
+    font-weight: bold;
+    width: 70px;
+    text-align: center;
+    width: 10%;
+    border: 1px solid  rgb(216, 213, 213);
+    border-radius: 5px;
+}
+nav ul{
+    list-style: none;
+    width: 100%;
+}
+nav{
+    height: 50px;
+    background:  rgb(236, 231, 231);
+}
+nav a{
+    text-decoration: none;
+    color: rgb(54, 52, 52);
+}
+.card-body{
+    text-align: center;
+}
+.card-text{
+    color: rgb(236, 56, 161);
+}
+.list-group{
+    width: 100%;
+    height: 50px;
+}
+.list-group .list-group-item1{
+    float: left;
+}
+.list-group .list-group-item2{
+    float: right;
+}

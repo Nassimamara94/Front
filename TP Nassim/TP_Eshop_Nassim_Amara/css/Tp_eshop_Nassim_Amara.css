@@ -1,0 +1,138 @@
+.container{
+    max-width:1300px;
+}
+
+.haut{
+    background: rgb(82, 79, 79);
+    height: 30px;
+    color: white;
+    width:1300px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+}
+.white{
+    font-size: 14px;
+    font-family: 'Rochester', cursive;  
+}
+main{
+    width:90%;
+
+}
+.logo{
+    font-family: 'IBM Plex Sans', sans-serif;
+    float:left;
+}
+#haut_droit{
+    width:1300px;
+    height:150px;
+    background: rgb(241, 237, 237);
+}
+.ds{
+    float:right;
+}
+.mon_compte{
+    float: right;
+}
+.cq{
+    clear:both;
+    float:right;
+}
+.mon_panier{
+    float: right;
+}
+div .haut p{
+    display: inline;
+    margin: 50px;
+}
+nav{
+    width: 1300px;
+    height: 100px;
+}
+ul#menu{
+   height: 30px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(241, 237, 237);
+    list-style: none;
+    /* pour cacher les puces */
+}
+ul#menu li {
+    float: left;
+     /*  on rend les li flottants pour leur permettre d' aller a l' horizontale */
+    text-align: center;
+}
+ul#menu li a{
+    
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500px;
+    border: 1px solid rgb(204, 204, 207);
+    padding: 6px 9px;
+    border-radius: 7px; /* permet de définir des côtés arrondis pour la bordure d'un élément */
+    margin: 0px 5px; 
+}
+
+#carouselExampleIndicators{
+    float:left;
+}
+.carousel slide{
+    width: 800px;
+    height: 100px;
+    background-color:rgb(236, 236, 236);;
+    color:white;
+}
+.Carrelages_parquets{
+    float: right;
+    width: 300px;
+}
+#logoP{
+    background: rgb(236, 236, 236);
+    width: 1100px;
+    float: right;
+}
+h4{
+    background: rgb(201, 118, 132);
+    color: white;
+    width: 200px;
+}
+#eshop_produits{
+    width: 1100px;
+    background: rgb(236, 236, 236);
+    float: left;
+    position: relative;
+}
+.carreaux1{
+    width: 300px;
+    height:200px;
+    float:left;    
+}
+.carreaux2{
+    width: 300px;
+    height:200px;
+    float:left; 
+}
+.carreaux3{
+    width: 300px;
+    height:200px;
+    float:left;    
+}
+.carreaux4{
+    width: 300px;
+    height:200px;
+    float:left;    
+}
+#eshop{
+    float:left;
+    background: rgb(236, 236, 236);;
+    width: 1100px;
+    height:850px;
+    color:rgb(0, 0, 0);
+}
+.adr{
+    float: left;
+}
+
+.fin_div{
+    color: rgb(167, 109, 119);
+}

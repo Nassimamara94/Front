@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Encart</title>
+            <style>
+                *{
+                    box-sizing: border-box;
+                }
+                .encart{
+                    width: 250px;
+                    height: 260px;
+                    border: 1px solid red;
+                    background: url(images/carrof.jpg) no-repeat;
+                    background-size: auto 100%;
+                    background-position: center top;    
+                    position: relative;             
+                }
+                .desc{
+                    width: 90%;
+                    height: 90%;
+                    position: absolute;
+                    background-color: rgba(0,0,0,.1);
+                    bottom: 0; 
+                    color: #fff;
+                    text-align: center;
+                }
+                .rs{
+                    background: rgba(255,255,255,.2);
+                    position: absolute;
+                    left: 5%;
+                    top: 0;
+                    display: none;
+                }
+                .encart:hover .rs{
+                    display: block;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="encart">
+                <div class="desc">
+                    <strong>art de vivre</strong>
+                    <h2>mimi carrof</h2>
+                    <p>"Tout est là : il y a juste à regarder et à être sensible à notre environnement, aux couleurs"</p>
+                </div>
+                <div class="rs">f - t - rss</div>
+            </div>
+        </body>
+    </html>

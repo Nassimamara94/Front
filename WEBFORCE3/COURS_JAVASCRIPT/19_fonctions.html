@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Intro Fonctions</title>
+        </head>
+        <body>
+            <h1>Intro Fonctions</h1>
+
+            <script>
+                
+                //  alert("erreur"); /* si oubli de ; seule cette instuction s'exécute, et pas la suivante*/            
+                // [1, 2].forEach(alert);
+
+                var maVariable = document.querySelector('h1');
+                alert('coucou');
+
+
+
+                function disBonjour(){
+                        document.write('bonjour <br><br>');
+                } 
+                disBonjour();
+
+                 disHello = function(){
+                     document.write('Hello ! <br><br>');
+                 } 
+                //  invoquer une fonction: nom_fonction + parenthèse = function_name()
+                 disHello();
+                //  ici var dis hello, pointe du doight la fonction elle même
+                function disHolla(){
+                    return "Hola!";
+                }
+                salutation = disHolla();
+                // ici on stock la valeur d'une fonction dans une var
+                document.write( salutation + '<br><br>');
+                // la function addition attend 2 parametre 
+                function addition(num1,num2){
+                    resultat = num1 + num2;
+                    return resultat; /* qui envoie le résultat à l'éxterieur de la fonction*/
+                }
+                // dans l'invocation de la fonction on envoie 2 arguments
+                document.write(addition(2,6));
+            </script>            
+        </body>
+    </html>

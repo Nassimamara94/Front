@@ -1,0 +1,24 @@
+body{
+    background: lightgray;  
+}
+.container{
+    width: 75%;
+    height: 75%;
+    margin-top: 10%;
+    margin-left: 30%;
+}
+form{
+    /* height: 600px; */
+    width: 40%;
+    height: 50%;
+    border: 10px inset purple;
+    margin: 0 auto;
+}
+label{
+    width: 25%;
+    background-color: mistyrose;
+    float: left;
+}
+form:hover{
+    box-shadow: 0 0 1px 10px yellow;
+}

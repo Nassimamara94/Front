@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Document</title>
+        </head>
+        <body>
+            <h1>Portée Globale exercice</h1>
+            <p>on va créer 2 fonction appelés a et b. Et 3 variable x, y et z. 2 d'entres elles seront définit à l'intérieur de la fonction et l'autre sera définit dans la portée globale.</p>
+            <p>On aura une 3ème fonction qu'on appellera sortie, qui prend 1 seul paramètreet qui le renvoit dans un pargraphe de la page.</p>
+            <p>Que se passe t'il si les variables sont appelés d'une autre fonction</p>
+
+            <script>            
+              
+        x = 1;  
+        function a(){
+            y= 2;
+        sortie(y);
+            
+        } 
+        function b(){
+            z = 3;
+        sortie(z);
+            
+        } 
+        function sortie(valeur){
+           var para = document.createElement('p');     
+            document.body.appendChild(para);     
+            para.textContent = 'La valeur est: '+ valeur;
+        }
+        //  ici la fonction sortie fonctionne car elle est dans la portée des autres fonctions.
+        // la fonction sortie est dispo dans tous le code car définie dans la portée globale
+        sortie(x);
+        a();
+        b();
+      
+         </script>
+            
+        </body>
+    </html>

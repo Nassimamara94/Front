@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ajout de css avec jquery</title>
+    <style>
+        section{
+            
+            border: 2px solid crimson;
+            margin: 0 auto;
+            padding: 20px;
+            width: 70%;   
+        }
+    </style>
+</head>
+<body>
+    <h1>Ajout de css avec jquery</h1>
+    <section>Ici contenu section</section>
+    <p class="resultat"></p>
+    <button>Retire la class</button>
+    
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+    $(function(){
+        // alert('hello');
+        // méthode pour ajouter un css
+        $('section').on('click', function () {
+        $(this).css('background', 'gold');
+        // ici on récupere la valeur du background, on affiche en console
+        var couleur = $(this).css("background-color");
+        console.log(couleur);
+             /* Selectionner p avec la class resultat */
+            $('.resultat').html("coucou " + couleur);
+        
+        })
+    // cette méthode pour ajouter plusieurs css
+        $('section').css({
+            "background": "orange",
+            "font-size": "2rem"
+        });
+        var retireClasse = function(){
+            $('u').removeClass();
+            $('button').on('click', retireClasse);
+        }
+   
+     
+    }) /* Fin su scope jQuery */
+    
+    
+    </script>
+</body>
+</html>

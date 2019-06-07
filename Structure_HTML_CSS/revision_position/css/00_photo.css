@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+     padding-top: 0;
+}
+#container{
+    width: 100%;
+    background: lightgrey;
+}
+.div{
+    width: 20%;
+    height: 700px;
+    border: 1px solid black;
+    background: lavender;
+    display: inline-block;
+    border-radius: 5%;
+    margin:40px 250px;
+}

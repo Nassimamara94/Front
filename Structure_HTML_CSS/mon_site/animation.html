@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Animations</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Description sous le titre apparaîssant dans la recherche google - mot clés pour les moteurs de recherches -->
+        <meta name="description" content="Ma premiere page en html/css">
+        <!-- link for Font -->
+        <link href="https://fonts.googleapis.com/css?family=Anton%7CLemonada%7COswald" rel="stylesheet">
+        <!-- link font-awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossorigin="anonymous">
+        <!-- link css  -->
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <!-- mon haut de site -->
+        <header>
+            <div id="logo">
+
+                <a href="index.html" target="_blank">
+                    <img src="images/logo.png" alt="logo html/css">
+                </a>
+            </div>
+            <div id="slogan">
+                <h1>Mon premier site en HTML/CSS</h1>
+            </div>
+            <div id="rs">
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="https://facebook.com/" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="https://instagram.com/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="clear"></div>
+        </header>
+        <!-- navigation du site -->
+        <nav>
+            <a href="index.html">Structure</a>
+            <a href="texte.html">Textes</a>
+            <a href="selecteur.html">Selecteurs</a>
+            <a href="image.html">Images</a>
+            <a href="position.html">Positions</a>
+            <a href="zoning.html">Zooning</a>
+            <a href="liste.html">Listes</a>
+            <a href="lien_menu.html">Liens</a>
+            <a href="tableau.html">Tableaux</a>
+            <a href="formulaire.html">Formulaires</a>
+            <a href="multimedia.html">Multimedias</a>
+            <a href="animation.html" class="active">Animations</a>
+            <a href="flexbox.html">FlexBox</a>
+            <a href="explication.html">Figure/Figcaption</a>
+            <a href="pattern.html">Pattern</a>
+        </nav>
+        <!-- contenu principale -->
+        <main>
+            <section>
+                <h3>Infobulle</h3>
+                <div class="infoBulle">
+                    <p> <a href="#">Passez la souris <span>Salut, je suis un pop-up</span></a></p>
+                    <p><a href="#">ici aussi ! <span>Salut, un autre pop-up</span></a></p>
+                    <p><a href="#">Une fois encore. <span>Salut, encore un autre pop-up</span></a></p>               
+                </div>
+            </section>
+            <section class="effetTransition">
+                <h3>Effet de survol avec transition et filtres css</h3>
+                <ul class="imgEffets">
+                    <li><img src="images/survol_img1.jpg" alt=""></li>
+                    <li><img src="images/survol_img2.jpg" alt=""></li>
+                    <li><img src="images/survol_img3.jpg" alt=""></li>
+                    <li><img src="images/survol_img4.jpg" alt=""></li>
+                </ul>                  
+            </section>
+            <section>
+                <h3>Rotation d'un menu en CSS3</h3>
+                <article id="menuRotate">
+                    <dl class="menu">
+                        <dt class="btnRot">Partager</dt>
+                        <dd><a href="#">...</a></dd>
+                        <dd><a href="#">Mon Site</a></dd>
+                        <dd><a href="#">Facebook</a></dd>
+                        <dd><a href="#">Twitter</a></dd>
+                    </dl>
+                    <div class="masque"></div>
+                    <div class="ombre"></div>
+                </article>
+            </section>
+        </main>
+        <a href="#logo">
+            <button type="button">
+                <i class="fas fa-arrow-circle-up" aria-hidden="true"></i>
+            </button>
+        </a>
+        <!-- https://developer.mozilla.org/fr/docs/Accessibilit%C3%A9/ARIA -->
+        <!-- pied de page -->
+        <footer>
+
+        </footer>
+     <script src="js/mon_site.js"></script> 
+    </body>
+
+</html>

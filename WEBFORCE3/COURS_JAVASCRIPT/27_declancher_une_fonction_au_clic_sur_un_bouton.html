@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Changer le Backgroung html avec JS</title>
+        </head>
+        <style>
+            
+        </style>
+        <body>
+            <button>CHANGER LA COULEUR</button>
+
+            <script>
+                var btn = document.querySelector('button');
+
+                function changeBg(){
+                    // alert('ok');
+                    document.body.style.backgroundColor='orange';
+                }
+                btn.addEventListener('click', changeBg);
+
+            </script>
+        </body>
+    </html>

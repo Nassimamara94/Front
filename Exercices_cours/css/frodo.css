@@ -1,0 +1,72 @@
+body{
+    width: 60%;
+    margin: auto;
+
+}
+table{
+    border: 2px solid transparent;
+    border-collapse: collapse;
+    margin: 50px auto;
+}
+td{
+   border: 2px solid transparent;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+}
+.case{
+    background-color: white;
+}
+.noir{
+    background-color: black;
+}
+.maronf{
+    background-color: #331a00;
+}
+.maronk{
+    background-color: #4d3300;
+}
+.peauf{
+    background-color: #ff9966;
+}
+.peauc{
+    background-color: #ffbb99;
+}
+.jaune{
+    background-color: yellow;
+}
+.maron{
+    background-color: #663300;
+}
+.maronb{
+    background-color: #994d00;
+}
+.maroncc{
+    background-color: #996633;
+}
+.bois
+{
+    background-color: #802b00;
+}
+.boisc
+{
+    background-color: #b33c00;
+}
+.vertf{
+    background-color: #001a00;
+}
+.vertm{
+    background-color: #003300;
+}
+.vert{
+    background-color: #006600;
+}
+.vertc{
+    background-color: #009900;
+}
+.clair{
+    background-color: #ffecb3;
+}
+.clairf{
+    background-color: #ffe699;
+}

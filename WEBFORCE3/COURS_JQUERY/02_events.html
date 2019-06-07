@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events en js pure</title>
+</head>
+<body>
+    <h1>
+         Events en js pure
+    </h1>
+    <button id="btn">BOUTON</button>
+    
+
+    <script>
+        var btn = document.getElementById('btn');
+       var action =  function(){
+           alert('tu as cliqué');
+        }
+        btn.addEventListener('click', action);
+        
+        </script>
+</body>
+</html>

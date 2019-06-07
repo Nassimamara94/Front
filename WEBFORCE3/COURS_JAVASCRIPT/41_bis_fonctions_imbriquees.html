@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Fonction Imbriquée et Closure bis </title>
+    </head>
+    <body>
+        <h1>Fonction Imbriquée et Closure bis</h1>   
+        <p>fonction et closure 'pierre giraud' </p>
+        <p><a href="https://www.pierre-giraud.com/javascript/cours-complet/javascript-presentation.php">cours-complet JS</a></p>
+        <p>Ici on a bien accès à la variable car on a passé sa valeur dans la fonction et les sousFonctions en tant que paramètre. </p>
+
+
+        <script>
+            // etape A : meta fonction qui imbrique plusieurs sous fonctions.  
+
+        function maMetaFunction(){
+            var maVariable = 1;            
+
+            sousFunction1(maVariable);
+            sousFunction2(maVariable);
+            sousFunction3(maVariable);
+            }
+
+            function sousFunction1(valeur){
+                document.write(valeur);
+            }
+
+            function sousFunction2(valeur){
+                document.write(valeur);
+            }
+
+            function sousFunction3(valeur){
+                document.write(valeur);
+            }
+
+            maMetaFunction();
+
+
+            
+            
+        </script>
+
+        
+    </body>
+    </html>

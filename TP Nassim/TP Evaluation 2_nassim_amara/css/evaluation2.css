@@ -1,0 +1,35 @@
+/* RESET    */
+
+*{ box-sizing:border-box;
+}
+html{
+    font-size: 62.5%; /* base 10px */
+}
+body{
+    font : 1.4rem/1.5 arial, helvetica, sans-serif;
+    margin: 0;
+}
+.container-fluid{
+    padding: 0;
+}
+header img{
+    position:relative;
+}
+nav{
+    position: absolute;
+}
+.bienvenue{
+     text-align: center;
+    color: white;
+}
+.location{
+    text-align: center;
+    color: white;
+    font-size: 40%;
+}
+.photo_vehicule1{
+    float:left;
+}
+.prix{
+    float:right;
+}

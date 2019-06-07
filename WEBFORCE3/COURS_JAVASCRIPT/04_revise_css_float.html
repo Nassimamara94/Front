@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Float</title>
+            <style>
+                .container{
+                    width: 80%;
+                    border: 2px solid greenyellow;
+                    margin: 0 auto;
+                }
+                .clearfix:after{
+                    content: 'FAUX FOOTER';
+                    display: table;
+                    clear: both;
+                }
+               .flt_l{
+                    width: 25%;
+                    float: left;
+                }
+                .clear{
+                    clear: both;
+                    display: table;
+                }
+                
+            </style>
+        </head>
+        <body>
+            <div class="container clearfix">
+                <img src="images/gryffondor.jpg" class="flt_l" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptatibus eaque eum nostrum suscipit dolorum quo, dicta aliquam blanditiis quis ipsam accusamus cumque laboriosam. Voluptates iure sed inventore debitis eligendi.s</p>
+                <strong class="clear">legende image blablabla</strong>
+                <img src="images/gryffondor.jpg" class="flt_l" alt="">
+                <!-- <footer class="clear">&copy totodesign</footer> -->
+                
+            </div>
+            
+            
+        </body>
+    </html>

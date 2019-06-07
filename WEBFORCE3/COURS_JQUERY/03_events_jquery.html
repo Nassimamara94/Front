@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events en js pure</title>
+</head>
+
+<body>
+    <h1>
+        Events en js pure
+    </h1>
+    <button id="btn">BOUTON</button>
+
+
+    <script src="js/jquery-3.3.1.min.js"> </script>
+    <script>
+    // toujours tester que je jQuery est bien afficher
+    // $(function(){
+        // tout le scope jQuery
+        // ne rien faire avant d'afficher en console
+        // console.log('hello world');
+    // }) // fin du scope
+
+    // ici une fonction dans une variable
+    var action = function(){
+           alert('tu as cliqué');        
+    }
+     $("#btn").on("click", action);
+
+
+
+     /*  
+     ici avec fonction anonym
+     $("#btn").on("click", function () {
+           alert('tu as cliqué');        
+            }); */
+    </script>
+</body>
+
+</html>

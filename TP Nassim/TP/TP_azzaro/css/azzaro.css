@@ -1,0 +1,235 @@
+*{ /* mini reset */
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 1000px;
+    background: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000;
+}
+#container{
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+/* Mon header commence ici */
+header{
+    width: 100%;
+    height: 140px;
+    padding: 0;
+}
+/* Logo, 1ère div à gauche */
+#logo{
+    width: 10%;
+    height: 90px;
+    float: left;
+    padding: 0 auto;
+}
+#logo img{
+    width: 50%;
+    height: 50px;
+    margin-left: 30%;
+}
+/* 2ème div du header */
+.maBoutique{
+    width: 25%;
+    height: 90px;
+    float: left;
+    text-align: center;
+}
+.maBoutique h1{
+    word-spacing: 0.3em;
+    font-size: 3.4em;
+    font-style: italic;
+    font-weight: bolder;
+}
+.maBoutique p{
+    color: #ff66ff;
+}
+/* 3ème div du header */
+.aide{
+    width: 20%;
+    height: 90px;
+    margin: 0 7%;
+    float: left;
+    text-align: center;
+}
+.aide h3{
+    font-size: 2em;
+    font-weight: lighter;
+    color: #4da6ff;
+}
+ .aide #telephone{
+    font-size: 1em;
+    font-weight: lighter;
+    color: #4da6ff;
+    margin-right: 20%;
+ }
+ #telephone{
+     background: url(../images/aide.png) no-repeat;   
+     margin-left: 25%; 
+ }
+ .aide p{
+     color: #B0B0B0;
+ }
+ /* 4ème div du header */
+.monCompte{
+    width: 25%;
+    height: 90px;
+    float: left;
+    margin-left: 6%;
+    text-align: center;
+}
+.monCompte a{
+    text-decoration: none;
+    color: #fff;
+    background: #4da6ff;
+    width: 100%;
+    height: 20px;
+    display: block;   
+}
+.monCompte p{
+    color: #fff;
+    background: #4da6ff;
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 3px;
+    height: 60px;
+    line-height: middle;
+}
+.clear{
+    clear: both;
+}
+/* Ma nav */
+nav{
+    width: 100%;
+    height: 50px;
+    background: #4da6ff;
+}
+nav li{
+    display: inline-block;
+    width: 16%;
+    height: 50px;
+    text-align: center;
+}
+nav li:first-child{
+    background: #ff66ff;
+}
+nav a{
+    text-decoration: none;
+    line-height: 50px;   
+    color: #fff;
+    font-size: 1.1em;
+}
+/************ mon image bandeau ***********/
+.bandeau{
+    width: 100%;
+    height: 350px;
+}
+.bandeau img{
+    width: 100%;
+    height: 100%;
+}
+/*********** Ma section Un ***************/
+.secUn{
+    width: 100%;
+    height: 150px;
+    margin-top: 15px;
+}
+.paiemant, .nous, .services{
+    float: left;
+    margin-left: 2.5%;
+    height: 100px;
+}
+.paiemant h3, .nous h3, .services h3{
+    color: #4da6ff;
+    margin-bottom: 10px;
+}
+.paiemant{
+    width: 25%;
+    height: 140px;
+    text-align: left;
+    /* padding-left: 3%; */
+    padding-top: 10px; 
+}
+.paiemant p{
+    margin-bottom: 15px;
+}
+.paiemant span{
+    width: 90%;
+    height: 40px;
+}
+.nous{
+    width: 40%;
+    height: 150px;
+    text-align: justify;
+    /* margin-left: 1%; */
+    margin-right: 2%;
+}
+.services{
+    width: 25%;
+    height: 150px;
+    /* margin-left: 1%; */
+    text-align: justify;
+}
+.services span{
+    width: 90%;
+    margin: 0 auto;
+    height: 55px;
+    float: left;    
+}
+/*********** Ma section deux ***************/
+.secDeux{
+    width: 100%;
+    height: 200px;
+}
+.BonPlan, .coup, .objectif {
+    float: left;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 5%;   
+    box-shadow: 0px 0px 8px #808080;
+    width: 25%;
+    background: inherit;
+}
+.BonPlan h3, .coup h3, .objectif h3{
+    width: 100%;
+    height: 25px;
+    font-weight: bolder;
+    background: #B8B8B8;
+    text-align: center;
+    border-radius: 10px; 
+}
+
+.BonPlan img,.bon_texte, .coup img,.bon_texte, .objectif img,.bon_texte {
+    float: left;
+    word-spacing: 0.2em;
+}
+.secDeux div img{
+    margin-right: 3%;
+
+}
+.BonPlan a, .coup a, .objectif a{
+    margin-left: 85%;
+    
+}
+
+/*********** Footer ***************/
+footer{
+    width: 100%;
+    height: 50px;
+    background: deepskyblue;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    text-align: right;
+    margin-left: 6%;
+    width: 10%;
+    line-height: 50px;
+}
+

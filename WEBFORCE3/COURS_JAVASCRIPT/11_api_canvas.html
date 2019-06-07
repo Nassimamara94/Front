@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Canvas</title>
+            <style>
+                #monCanvas{
+                    border: 1px solid orange;
+                    width: 400px;
+                    height: 300px;
+                }
+            </style>
+        </head>
+        <body>
+            <h1>Canvas</h1>
+            <p>on ne met rien dans la balise canvas, elle est juste la pour qu'on utilise en js</p>
+            <p>Position canvas fillRect (x,y,w,h); :  Position X |ositon Y | width | height</p>
+            <hr>
+            <br><br><br>
+            <canvas id="monCanvas"></canvas>
+            <script>
+                var canvas = document.getElementById('monCanvas');
+                var fueille = canvas.getContext('2d');
+                fueille.fillStyle = 'tomato';
+                fueille.fillRect(20, 5, 100, 20); /* 1ère valeur 20px du coté gauche, 2ème valeur 5px du top, 3ème valeur 100px de largeur de mon rectangle et 4ème valeur 20px de hauteur */
+                fueille.fillStyle = 'green';
+                fueille.fillRect(60, 5, 20, 100);
+            </script>
+        </body>
+    </html>

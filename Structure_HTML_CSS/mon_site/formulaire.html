@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Formulaires</title>
+        <link rel="stylesheet" href="css/index.css">
+        
+    </head>
+    <body>
+            <!-- mon haut de site -->
+        <header>
+            <div id="logo">
+                <a href="index.html" target="_blank"><img src="images/logo.png" alt="logo html/css"></a>
+            </div>
+            <div id="slogan">
+                <h1>Mon premier site en HTML/CSS</h1> 
+            </div>
+            <div id="rs">
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="clear"></div>
+        </header>
+        <!-- navigation du site -->
+        <nav>
+            <a href="index.html">Structure</a>
+            <a href="texte.html">Textes</a>
+            <a href="selecteur.html">Selecteurs</a>
+            <a href="image.html">Images</a>
+            <a href="position.html">Positions</a>
+            <a href="zoning.html">Zooning</a>
+            <a href="liste.html">Listes</a>
+            <a href="lien_menu.html">Liens</a>
+            <a href="tableau.html">Tableaux</a>
+            <a href="formulaire.html" class="active">Formulaires</a>
+            <a href="multimedia.html">Multimedias</a>
+            <a href="animation.html">Animations</a>
+            <a href="flexbox.html">FlexBox</a>
+            <a href="explication.html">Figure/Figcaption</a>
+            <a href="pattern.html">Pattern</a>
+        </nav>
+        <main>
+            <section>
+                <h3>Formulaire</h3>
+                <form action="blabla.php" method="POST" enctype="multipart/form-data" id="formulaire1">
+                    <label for="pseudo" required>Pseudo *</label>
+                    <input type="text" name="pseudo" id="pseudo"> <br>
+                    <label for="prenom">Prénom</label>
+                    <input type="text" name="prenom" id="prenom"> <br>
+                    <label for="mdp">Mod de passe</label>
+                    <input type="text" name="mdp" id="mdp"> <br>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email"> <br>
+                    <label for="cv">CV</label>
+                    <input type="file" name="cv" id="cv" placeholder="choisir un fichier"> <br>                                                                                                                                                                   
+                    <label for="fruit">Quel sont vos fruit préferés ?</label>                                                                                                                                      
+                    <br><br>               
+                    <p>
+                        <input type="checkbox" name="fruit">Orange
+                        <input type="checkbox" name="fruit" checked>Fraise
+                        <input type="checkbox" name="fruit">Mangue
+                    </p>                    
+                    <br>
+                    <label for="codepostal">Code Postal</label>
+                    <input type="number" name="codepostal" id="codepostal" maxlength="5" pattern[0-9]{5} title="5 chiffre entre 0 et 9"> <br>
+                    <label class="label" for="comments">Message</label>
+                    <textarea name="com" id="comments" cols="15" rows="5" maxlength="1000"></textarea>
+                    <br><br>
+                    <input type="submit" name="envoyer" value="Envoyer">                    
+                    <input type="reset" name="annuler" value="Annuler">
+                </form>
+            </section>
+        </main>
+
+        
+    </body>
+</html>

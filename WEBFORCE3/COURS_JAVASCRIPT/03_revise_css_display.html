@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Display</title>
+            <style>
+                p{
+                    /* p étant u élément de type block donc sa largueur est de 100% */
+                    background: forestgreen;
+                }
+                strong{
+                    background: yellow;
+                    /* strong étant un élément de type inline, la longueur s'adapte au contenu. */
+                    /* marge top et bottom ne fonctionnent pas ou mal sur les balises inline. Les width et height ne fonctionnent pas sur les éléments inline. */
+                    padding: 1rem;
+                    width: 120px;
+                }
+                em{
+                    font-style: normal;
+                    background: thistle;
+                    padding: 1rem;
+                    display: inline-block;
+                }
+                ul{
+                    border: 2px crimson solid;
+                    list-style: none;
+                    padding: 0;
+                }
+                 ul li{
+                     border: 2px gold solid;
+                     display: inline-block;
+                     padding: 5px;
+                 }
+                 section{
+                     border: 2px solid aqua;
+                     width: 60%;
+                 }
+                 section div{
+                     border: 2px solid firebrick;
+                     box-sizing: border-box;
+                     width: 50%;
+                     padding:  1rem;
+                     float: left; /* Les div sortent du flux, cela veut dire que le parents ne les contient plus */
+                 }
+                 /* Le clearfix se met dans la boite qui contient les flottant */
+                 .clearfix:after{
+                     content: '';
+                     display: table;
+                     clear: both;
+                 }
+            </style>
+ 
+        </head>
+        <body>
+            <p>Lorem ipsum dolor, <strong>du gras</strong> sit amet consectetur adipisicing elit. Asperiores eius perspiciatis dolorum at adipisci nam dolores eum? Mollitia obcaecati maxime, magni praesentium saepe voluptate autem qui nobis, placeat alias quisquam?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <em>des italic</em> Asperiores eius perspiciatis dolorum at adipisci nam dolores eum? Mollitia obcaecati maxime, magni praesentium saepe voluptate autem qui nobis, placeat alias quisquam?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores eius perspiciatis dolorum at adipisci nam dolores eum? Mollitia obcaecati maxime, magni praesentium saepe voluptate autem qui nobis, placeat alias quisquam?</p>
+                <ul>
+                    <li>Pomme</li>
+                    <li>Poire</li>
+                    <li>banane</li>
+                </ul>
+                
+                <section class="clearfix">
+                    <div>UN</div>
+                    <div>DEUX</div>
+                    <div>TROIS</div>
+                </secton>
+            
+        </body>
+    </html>

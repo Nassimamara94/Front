@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Do While et For In</title>
+        </head>
+        <body>
+            <h1>Do While et For In</h1>
+        <br><br><br>
+        <h2>DO WHILE</h2>
+            <p><b>Do While</b> ressemble fortement à while, sauf que dans ce cas la boucle est toujours éxécuter au moins une fois. Dans le cas de la boucle <b>While</b> si la condition n'est pas valide la boucle n'est pas éxécuté. 
+            <br> Alors que avec <b>Do While</b> la boucle est éxécuté une 1ère fois. Puis la condition est tester pour voir si la condition doit contunier.</p>
+            <pre>
+                    do{
+                        instruction 1;
+                        instruction 2;
+                    } while(condition)
+
+            </pre>
+            <p><i>L'utilisation de la boucle Do While est très peu fréquent.</i></p>
+            <br><br><hr>
+            <h2>FOR IN</h2>
+            <p>Permet de parcourrir un objet</p>
+
+            <script>
+                frigo = {
+                    fruits : ['citron ', ' oranges ' + '<br>'],
+                    legumes : [' patates ', ' tomates']
+                };
+
+                for(type in frigo){
+                    document.write(frigo[type]);
+                }
+            
+            </script>
+            
+        </body>
+    </html>

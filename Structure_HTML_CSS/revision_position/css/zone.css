@@ -1,0 +1,20 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+#container{
+    width: 60%;
+    height: 400px;
+    background: lightblue;
+    margin: 0px auto;
+    padding-top: 20px;
+    background: url(../images/harry.jpg);
+}
+.float{
+    width: 40%;
+    height: 150px;
+    border: 1px solid black;
+    margin: 25px 25px;
+    background: tan;
+    display: inline-block;   
+}

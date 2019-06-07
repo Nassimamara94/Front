@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Séparation Concept</title>
+            <style>
+                p{
+                    font-family: 'Helvetica New', sans-serif;
+                    text-transform: uppercase;
+                    letter-spacing: .1em;
+                    padding: 5px 10px;
+                    background: rgba(0, 0, 200,.6);
+                    border-radius: 10px;
+                    box-shadow: 1px 1px 4px rgba(0, 0, 0,.8) ;
+                    display: inline-block;
+                    cursor: pointer;
+                }
+            </style>
+        </head>
+        <body>
+            <!-- <h1>Séparation Concept</h1>
+            <p>Var para va stocker dans la var para tout les p du documen</p>
+            <p>l'usage veut qu'on utilise  document.querySelector et pas tagName </p>
+            <p>para.addEventListener() : cet méthode attend 2 arguments : le 1er c'est l'événement qu'on attend qui va déclancher l'action qui sera le deuxième argument.</p>
+            <p> prompt c'est une méthode du navigateur </p> -->
+      
+            <!-- <hr>
+            <br><br><br> -->
+            <p>Ton prénom : Sarah</p>
+            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+            <script>
+                var para = document.querySelector('p'); 
+                para.addEventListener('click',changeNom);
+                function changeNom(){
+                    var nom = prompt("saisissez un prénom");
+                    para.textContent = 'Ton prénom / ' +  nom; 
+                }
+            
+            </script>            
+        </body>
+    </html>

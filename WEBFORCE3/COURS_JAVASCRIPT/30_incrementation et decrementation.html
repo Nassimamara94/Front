@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Incrémentation et décrémentation</title>
+        </head>
+        <body>
+            <h1>Incrémentation et décrémentation</h1>
+            <p><b>Incrémentation et décrémentation</b> sont des racourcis pour ajouter ou soustraire une valeur à une variable</p>
+            <ul>
+                <li><i>++</i>  signifie on ajoute 1</li>
+                <li><i>--</i> retirer 1 à la variable</li>
+                <li><i>+=</i> ajoute à la variable</li>
+                <li><i>-=</i> retire à la variable</li>
+                <li><i> *=</i> multiplier à la variable</li>
+                <li><i>/=</i> diviser à la variable</li>
+                <li><i> %=</i> modulo à la variable</li>
+            </ul>
+            <p><i>x++</i> et <i>++x</i> ont le même résultat à la différence près que <i>x++</i> retourne la valeur de x avant d'effectuer l'opération alors que <i>++x</i> retourne la valeur de x après avoir éffectué l'opération. </p>
+
+            <script>
+                var x = 5;
+                console.log(x++);/* donne 5 mais x est maintenant égale à 6*/
+                console.log(x); /* x est  égale à 6*/
+                console.log(++x);/*  x = 7 */
+
+                var heure = 5;
+                heure++;
+                console.log('il est: ' + heure +'h');
+                heure+=2;
+                console.log('il est: ' + heure + 'h');
+                heure /= 2;
+                console.log('il est: ' + heure + 'h');
+                heure %= 3;
+                console.log('il est: ' + heure + 'h');
+                
+                
+                
+                
+            </script>
+            
+        </body>
+    </html>

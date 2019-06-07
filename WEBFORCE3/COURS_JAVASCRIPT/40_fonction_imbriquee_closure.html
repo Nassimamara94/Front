@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Fonction Imbriquée et Closure</title>
+    </head>
+    <body>
+        <h1>Fonction Imbriquée et Closure</h1>
+        <p>Garder à l'esprit que l'on peut appeler une fonction de n'importe ou, même à l'intérieur d'une autre fonction. br>les fonctions
+        imbriquées sont souvent utilisées comme un moyen de garder du code bien organisé. Une grande fonction complexe est plus facile
+        à comprendre si divisée en plusieurs sous fonctions.</p>
+        <br><br><hr>
+        <p>
+            <b>commentaire du code du script</b> <br> <br>
+             Il faut s'assurer que les valeurs de la variable utilisée dans la fonction ont eu porté correctes. Ici on a une référence
+            erreur var not defined. En effet bien que la valeur de du var avariable est définie dans la même portée que les appels de
+            fonctions, elle n'est pas défini dans les définitions dans la déclaration des fonctions (le code réel qui est exécuté lorsque
+            les fonctions sont appelées.) Pour que ça fonctionne il faut passer la valeur de la fonction en tant que paramètres.
+        </p>
+
+        <script>
+            // etape A : meta fonction qui imbrique plusieurs sous fonctions.
+
+            
+        function maMetaFunction(){
+            var maVariable = 1;            
+
+            sousFunction1();
+            sousFunction2();
+            sousFunction3();
+            }
+            function sousFunction1(){
+                document.write(maVariable);
+            }
+            function sousFunction2(){
+                document.write(maVariable);
+            }
+            function sousFunction3(){
+                document.write(maVariable);
+            }
+            maMetaFunction();
+            
+        </script>
+
+        
+    </body>
+    </html>

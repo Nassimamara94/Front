@@ -1,0 +1,69 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/* #container{
+    width: 1000px;
+    margin: auto;
+    height:800px;
+} */
+
+.logo{
+    float:left;
+    height: 60px;
+}
+.Boutique{
+    float:left;
+}
+
+em{
+    font-style: italic 
+}
+.pink{
+    color: pink;
+}
+h1{
+    font-size: 3em;
+    font-family: 'PT Serif', serif;
+}
+
+.Aide{
+    text-align: center;
+    float:both;
+}
+.Accompt{
+    text-align: right;
+    background-color: rgb(68, 94, 128);
+    height:30vh;
+    width: 30vw; 
+    float: right;
+    margin: 20px;
+}
+h2{
+    color:lightskyblue;
+}
+.jour{
+    font-style: italic;
+    color:gray;
+}
+#navigation{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(39, 114, 163);
+    width:100vw;
+}
+#nav li {
+	display: inline;
+    list-style: none;
+}
+#nav a {
+    display:inline-block;
+
+}
+#Bleu{
+    color:lightskyblue;
+}
+#newslatter{
+    float:left;
+    
+}

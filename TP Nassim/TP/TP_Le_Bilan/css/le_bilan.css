@@ -1,0 +1,268 @@
+html, body, div, span,
+h1, h2,a, img, ul, li,
+table, tr, td, footer, header,nav, {
+	margin: 0;
+	padding: 0;
+
+}
+body{
+    margin: 0 auto;
+    background: #000;
+    font-family: 'Thasadith', sans-serif;
+    color: 	#383838;
+}
+/* dimenssions de tout mon contenu */
+#container{
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    background: #fff;
+}
+/* dimenssions header */
+header{
+    width: 100%;
+    height: 15%;
+}
+/* 1ère ligne du header */
+header p{
+     color: darkred;
+     word-spacing: 10px;
+     font-weight: bold;
+     text-align: center;
+     margin-bottom: 0px;
+}
+header hr{
+    width: 50%;
+    margin: 0 auto;
+    color: darkgray;
+    margin-bottom: 0px;
+}
+/* Titre de la page */
+h1{
+    color: #383838;
+    font-weight: bolder;
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 0.5em;
+    margin: 0px;
+}
+nav{
+    width: 50%;
+    margin: 0 auto; 
+}
+nav ul{
+ margin: 0px 20%;
+}
+nav ul li{
+    float: left;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-style: italic;
+    color: #383838;
+    word-spacing: 0.2em;
+}
+.clear{
+    clear: both;
+}
+/* css du tableau commence ici */
+table{ /* taille et marges tableau*/
+    width: 100%;
+    margin: 0 auto;
+}
+tr{ /* taille et marges lignes*/
+    width: 100%;
+    height: 15%;
+}
+td{ /* taille et marges cellules*/
+    width:50%;
+    height: 100%;
+}
+td img{ /* taille toutes les images dans les cellules*/
+    width: 100%;
+    height: 100%;
+}
+/* 1ère ligne du tableau TD avec texte */
+.premiere{
+    width: 80%;
+    height: 80%;
+    margin: 10% -30%;
+} 
+.premiere h2,ul{
+    text-align: right;
+    margin-bottom: 0px;
+}
+.premiere h2{
+    font-style: italic;
+    font-size: 1.3em;
+}
+.premiere hr{
+    position: relative;
+    left: 10%;
+    width: 80%;
+}
+.premiere ul{
+    list-style: none;
+    margin-top: 0px;
+    letter-spacing: 0.2em;
+}
+/* 3ème ligne du tableau TD avec texte */
+.deuxieme{
+    width: 90%;
+    height: 50%;
+    margin: 25% auto;
+}
+.deuxieme h2{
+    letter-spacing: 0.5em;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+.deuxieme hr{
+    position: relative;
+    right: 10%;
+    width: 80%;
+}
+.deuxieme p{
+    margin-top: 0px;
+    line-height: 1em;
+    font-style: italic; 
+}
+.deuxieme span{
+    font-weight: bold;
+    color: #fff;
+    background: #383838;
+}
+/* 3ème ligne du tableau TD avec texte */
+.troisieme{
+    width: 90%;
+    height: 50%;
+    margin: 25% auto;
+}
+.troisieme h2{
+    letter-spacing: 0.5em;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+.troisieme hr{
+    position: relative;
+    right: 10%;
+    width: 80%;
+}
+.troisieme p{
+    margin-top: 0px;
+    line-height: 1em;
+    font-style: italic; 
+}
+.troisieme span{
+    font-weight: bold;
+    color: #fff;
+    background: #383838;
+}
+/* 4ème ligne du tableau TD avec texte */
+.quatrieme{
+    width: 90%;
+    height: 50%;
+    margin: 30% auto;
+}
+.quatrieme h2{
+    letter-spacing: 0.5em;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+.quatrieme hr{
+    position: relative;
+    right: 10%;
+    width: 80%;
+}
+.quatrieme p{
+    margin-top: 0px;
+    line-height: 1em;
+    font-style: italic; 
+}
+.quatrieme span{
+    font-weight: bold;
+    color: #fff;
+    background: #383838;
+}
+/* 5ème ligne du tableau TD avec texte */
+.cinquieme{
+    width: 90%;
+    height: 50%;
+    margin: 20% auto;
+}
+.cinquieme  h2{
+    letter-spacing: 0.5em;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+.cinquieme hr{
+    position: relative;
+    right: 10%;
+    width: 80%;
+}
+.cinquieme p{
+    margin-top: 0px;
+    line-height: 1em;
+    font-style: italic; 
+}
+.cinquieme span{
+    font-weight: bold;
+    color: #fff;
+    background: #383838;
+}
+/* footer  */
+footer{ /* dimessions  footer*/
+    width: 100%;
+    height: 10%;
+}
+footer img{ /* dimessions  carte de paris*/
+    width: 15%;
+    height: 15%;
+    margin: 0 40%;
+    z-index: 1;
+}
+footer span{
+    font-size: 2em;
+    width: 15%;
+    height: 15%;
+    margin: 0 40%;
+    position: relative;
+    bottom: 15%;
+    z-index: 3;
+}
+
+footer hr{ /* dimessions  ligne séparatrice hr*/
+    width: 50%;
+    margin: 0 auto;
+    color: black;
+}
+footer h2{
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    margin: 0 40%;
+}
+footer p{
+    float: left;
+    margin: 0px auto;
+    font-weight: bold;
+
+}
+footer .first{
+    font-style: italic;
+    margin-left: 40%;
+}
+footer .middle{
+    font-style: italic;
+    margin-left: 41%;
+    word-spacing: 0.5em;
+
+}
+footer .last{
+    font-style: italic;
+    margin-left: 40%;
+}

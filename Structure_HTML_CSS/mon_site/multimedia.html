@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Multimedias</title>
+        <link rel="stylesheet" href="css/index.css">
+        
+    </head>
+    <body>
+            <!-- mon haut de site -->
+        <header>
+            <div id="logo">
+                <a href="index.html" target="_blank"><img src="images/logo.png" alt="logo html/css"></a>
+            </div>
+            <div id="slogan">
+                <h1>Mon premier site en HTML/CSS</h1> 
+            </div>
+            <div id="rs">
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="clear"></div>
+        </header>
+        <!-- navigation du site -->
+        <nav>
+            <a href="index.html">Structure</a>
+            <a href="texte.html">Textes</a>
+            <a href="selecteur.html">Selecteurs</a>
+            <a href="image.html">Images</a>
+            <a href="position.html">Positions</a>
+            <a href="zoning.html">Zooning</a>
+            <a href="liste.html">Listes</a>
+            <a href="lien_menu.html">Liens</a>
+            <a href="tableau.html">Tableaux</a>
+            <a href="formulaire.html">Formulaires</a>
+            <a href="multimedia.html" class="active">Multimedias</a>
+            <a href="animation.html">Animations</a>
+            <a href="flexbox.html">FlexBox</a>
+            <a href="explication.html">Figure/Figcaption</a>
+            <a href="pattern.html">Pattern</a>
+        </nav>
+        <main>
+            <section>
+                <h3>Video en fond</h3>
+                <div class="fondVideo">
+                    <video autoplay loop id="video-background" muted plays-inline>
+                        <source src="videos/videoBackground.mp4" type="video/mp4">
+                    </video>
+                    <div class="texteVideo">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatem quod expedita laborum, sit voluptas hic autem ab accusantium doloribus deleniti tenetur commodi, illo nisi accusamus soluta aut perferendis dignissimos!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam consectetur earum harum? Suscipit, maxime illum omnis expedita harum dignissimos porro iusto iure ab repudiandae perferendis nihil quis, consequatur cum fugiat.</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3>video</h3>
+                <figure class="videoLarge">
+                    <iframe src="https://www.youtube.com/embed/8bYBOVWLNIs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <figcaption>Fantastic Beasts: The Crimes of Grindelwald - Final Trailer</figcaption>
+                </figure>
+            </section>
+            <section>
+                <h3>Audio</h3>
+                <div class="audio">
+                        <p>Format mp3</p>
+                    <audio controls preload="metadata" autoplay>
+                        <source src="audio/son.mp3">
+                    </audio>
+                        <p>Format ogg</p>
+                    <audio controls preload="metadata" autoplay>
+                        <source src="audio/son.ogg">
+                    </audio>
+                </div>               
+            </section>
+            <section>
+                <h3>MAP</h3>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.490382806258!2d2.385722315770414!3d48.79161871335967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6739446855555%3A0x24f37a5c383487aa!2s7+Avenue+Maximilien+Robespierre%2C+94400+Vitry-sur-Seine!5e0!3m2!1sen!2sfr!4v1550140456514"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+            </section>
+        </main>
+
+    </body>
+</html>

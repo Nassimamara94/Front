@@ -1,0 +1,17 @@
+*{ /* mini reset */
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #e0ebeb;
+}
+header{
+    width: 100%;
+    height: 200px;
+}
+h1{
+    width: 40%;
+    font-size: 10em;
+    letter-spacing: 1em;
+    margin: 0% auto;
+}

@@ -1,0 +1,56 @@
+body{
+    font-size: 25px;
+
+    }
+h1{
+    color: white;
+    background-color: black;
+}
+section p{  /*Tous les p dans la section*/
+    color: red;
+}
+section p:first-child{ /*Premier p apres la sention*/
+    color: blue;
+}
+section p:last-child{
+    color: green;
+}
+section p:nth-child(even){ /*Cible les "p" qui sont pairs*/ 
+    color: purple;
+}
+section p:nth-child(odd){ /*Cibles les "p" impairs*/
+    color: pink; 
+}
+section p:nth-child(3),section p:nth-child(10){
+    color: orange;
+}
+.zone1{ /* pour cibler une class*/
+color: darkgreen;
+}
+.zone2{ /* pour cibler une class*/
+color: lightblue;
+}
+.lime{
+    color: maroon;
+    font-size: 45px;
+}
+#zone3{
+    color: magenta;
+
+}
+#zone3::after{ /*Rajouter du contenu après l'ID zone3*/
+content:" bonjour";
+color: red;
+}
+#zone3::before{ /*Rajouter du contenu avant l'ID zone3*/
+    content:"Bonjour ";
+    color: red;
+}
+li{
+    background-color: lime;
+    color: darkred;
+}
+li:nth-child(2){
+    background-color: black;
+    color: aliceblue;
+}

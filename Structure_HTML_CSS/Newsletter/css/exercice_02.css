@@ -1,0 +1,140 @@
+body{
+    font-family: 'Charm', cursive;
+    margin: 0 auto;
+    width: 60%;
+}
+#container{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+ 
+} 
+.float{
+        float: left;
+}
+.date{
+    width: 12%;
+    height: 250px;
+    background: darkred;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5em;
+
+}
+.date p:nth-child(1){
+    font-size: 2em;
+}
+.newsletter{
+   font-size: 5em;
+   width: 50%;
+   height: 200px;
+   position: relative;
+   top: 0px;
+   left: 17%;
+}
+.asscom{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+    background: #262626;
+    width: 50%;
+    height: 80px;
+    margin-top: 10px;
+    line-height: 80px;
+    text-align: center;
+    margin-left: 28%;
+    margin-bottom: 50px;
+}
+.img_grande img{
+    width: 100%;
+    height: 700px;
+    margin-bottom: 50px;
+}
+
+.ima_large img{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.lorem_text{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;  
+    margin-bottom: 10px; 
+}
+.lorem_text h1{
+ font-size: 2.5em;
+}
+span{
+    color: red;
+}
+.img_petit img{
+    width:100%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.text_img{
+    width: 100%;
+    margin-bottom: 50px;
+    font-size: 1.2em;   
+}
+.text_img h1{
+     font-size: 2.5em;
+}
+.gauche,.droite{
+    float: left;
+}
+.gauche{
+    width: 70%;
+    height: 250px;
+}
+.droite{
+    width: 30%; 
+}
+.droite img{
+    width: 100%;
+    height: 280px;   
+}
+.img_petitlarge img{
+    width: 100%;
+    height: 30px;
+}
+.img_petitlarge{
+    margin-bottom: 20px;
+}
+.text_img_deux{
+    width: 100%;
+}
+.gauche_deux,.droite_deux{
+    float: left;
+}
+.gauche_deux{
+    width: 30%;
+}
+.gauche_deux img{
+    width: 100%;
+    height: 250px;
+}
+.droite_deux{
+    text-align: right;
+    width: 70%;
+    font-size: 1.1em;
+}
+.text_fin{
+    float: left;
+    width: 25%;
+    text-align: left;
+}
+.text_fin img{
+    width: 90%;
+    height: 150px;
+}
+.text_fin h1{
+    font-size: 1.5em;
+    }
+}

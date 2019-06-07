@@ -1,0 +1,181 @@
+body{
+    background-color: gray;
+    font-family:'Roboto Slab';
+}
+.container{
+    width: 100em;
+    height: 78.5em;
+    margin: auto;
+
+}
+header{
+    width: 90em;
+    height: 13em;
+    margin: auto;
+    /* box-shadow: 6px 6px 6px blanchedalmond; */
+
+}
+.header_haut{
+    height: 10em;
+    background-color: white;
+    border-radius: 15% 15% 0 0;
+    
+
+}
+.logo{
+    width: 20%;
+    background: no-repeat;
+    padding-top: 0.2em;
+    padding-left: 0.5em;
+    float: left;
+}
+.titre{
+    width: 60%;
+    float: left;
+    text-align: center;
+}
+.titre h1{
+    font-family: 'Black Ops One';
+    font-size: 4em;
+    color: rgb(58, 58, 58);
+}
+hr{
+    margin-top: -3em;
+    color: red;
+}
+.onglets{
+    width: 10%;
+    float: left;
+    margin-left: 6em;
+    margin-top: 2em;
+
+}
+.onglet_haut a p{
+    background-color: rgb(58, 58, 58);
+    width:10em;
+    height:2em;
+    line-height: 1.8em;
+    color:white;
+    text-align: center;
+    border-radius: 10%;
+    text-decoration: none;
+}
+.onglet_bas a p{
+    background-color: rgb(248, 76, 76);
+    width:10em;
+    height:2em;
+    line-height: 1.8em;
+    color:white;
+    text-align: center;
+    border-radius: 10%;
+    text-decoration: none;
+}
+/************************************** a parametrer *******************************/
+ul#menu{
+    height: 3em;
+    margin-top: 0em; 
+    margin-bottom: 1em;
+    padding: 0;
+    background-color: rgb(58, 58, 58);
+    list-style: none;
+    /* pour cacher les puces */
+}
+ul#menu li{
+    float: left;
+    /*  on rend les li flottants pour leur permettre d' aller a l' horizontale */
+    text-align: center;
+}
+ul#menu li a{
+    width: 14em;
+    margin-left: -2em;
+    line-height: 2em;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+    display: block;
+    /* pour pouvoir dimensionner les "a"*/
+    text-decoration: none;
+    /* va enlever le underline du lien */
+}
+/* ********************************************************************************** */
+main{
+    height: 62.5em;
+    background: url(../images/bkg-body.jpg)no-repeat;
+    margin-top: 2em;
+    border-radius: 2%;
+    box-shadow: 6px 6px 6px rgb(58, 58, 58);
+
+}
+.colonne_gauche{
+    height: 40em;
+    width: 40em;
+    margin-top: 19em;
+    margin-bottom: 3em;
+    margin-left: 2em;
+    background-color: rgb(247, 157, 157);
+    border-radius: 5%;
+    float: left;
+
+}
+.photo_classe{
+
+}
+.texte_gauche{
+
+}
+.lancer{
+
+}
+.colonne_droite{
+    height: 40em;
+    width: 40em;
+    margin-top: 20em;
+    margin-bottom: 3em;
+    margin-left: 58em;
+    background-color: rgb(247, 157, 157);
+    border-radius: 5%;
+
+}
+.colonne_hd{
+    /* height: 18em;
+    width: 40em;
+    margin-top: 21em;
+    margin-right: 2em;
+    margin-left:58em;
+    background-color: rgb(247, 157, 157); */
+}
+.livre1{
+
+}
+.texte1{
+
+}
+.colonne_bd{
+
+    /* height: 18em;
+    width: 40em;
+    margin-top: 40em;
+    margin-right: 2em;
+    margin-left:58em;
+    background-color: rgb(247, 157, 157); */
+
+}
+.livre2{
+
+}
+.texte2{
+    
+}
+.qsn{
+
+}
+.contact{
+
+}
+.qr{
+
+}
+.reseaux_sociaux{
+    
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Document</title>
+            <style>
+                /* l'étoile est le sélecteur universel (sélctionne toutes les balises) */
+                *{
+                    box-sizing: border-box; /* width = contenu + padding + border.  */
+                }
+                .container {
+                    width: 80%;
+                    border: 2px solid greenyellow;
+                    margin: 0 auto;
+                    min-width: 600px;
+                }
+                figure{
+                    border: 2px solid orange;
+                     width: 25%;
+                     margin: 0;
+                     float: left;
+                     padding: .5rem;
+                }
+                figure img{
+                    max-width: 100%;
+                }
+                .clearfix:after {
+                    content: '';
+                    display: table;
+                    clear: both;
+                }
+            
+                .flt_l {
+                   
+                    float: left;
+                }
+            
+                .clear {
+                    clear: both;
+                    display: table;
+                }
+                @media  (max-width: 640px){
+                    body{
+                        background: hotpink;
+                        width: 100%;
+                    }
+                    figure{
+                        width: 50%;
+                        
+                    }
+                                       
+                }
+                @media  (max-width: 980px){
+                    body{
+                        background: yellow;
+                        width: 100%;
+                    }
+                    figure{
+                        width: 100%;
+                        
+                    }
+                                       
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container clearfix">
+                <figure>
+                    <img src="images/gryffondor.jpg" alt="">
+                    <figcaption>légende de mon image</figcaption>
+                </figure>            
+                <figure>
+                    <img src="images/gryffondor.jpg" alt="">
+                    <figcaption>légende de mon image</figcaption>
+                </figure>            
+                <figure>
+                    <img src="images/gryffondor.jpg" alt="">
+                    <figcaption>légende de mon image</figcaption>
+                </figure>            
+                <figure>
+                    <img src="images/gryffondor.jpg" alt="">
+                    <figcaption>légende de mon image</figcaption>
+                </figure>            
+                <figure>
+                    <img src="images/gryffondor.jpg" alt="">
+                    <figcaption>légende de mon image</figcaption>
+                </figure>            
+                <figure>
+                    <img src="images/gryffondor.jpg" alt="">
+                    <figcaption>légende de mon image</figcaption>
+                </figure>            
+                <figure>
+                    <img src="images/gryffondor.jpg" alt="">
+                    <figcaption>légende de mon image</figcaption>
+                </figure>            
+                <figure>
+                    <img src="images/gryffondor.jpg" alt="">
+                    <figcaption>légende de mon image</figcaption>
+                </figure>            
+            </div>
+            
+        </body>
+    </html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>CANVAS</title>
+            <style>
+                *{
+                    box-sizing: border-box;
+                }
+                html{
+                    width: 100%;
+                    height: inherit; /* la taille de la fenêtre */
+                }
+                body{
+                    margin: 0;
+                }
+                canvas{
+                    display: block; /* pour que le canvas s'adapte à la taille du body */
+                    border: 4px crimson solid;
+                }
+                button{
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                }
+            </style>
+        </head>
+        <body>
+            <!-- <h1>CANVAS</h1> -->
+            <button>DESSINE</button>
+            <canvas></canvas>
+            <script>
+               var btn = document.querySelector('button');
+               var canvas = document.querySelector('canvas');
+               var feuille = canvas.getContext('2d'); /* permet d'écrire sur la fueille en 2d */
+               var WIDTH = document.documentElement.clientWidth;
+               var HEIGHT = document.documentElement.clientHeight;
+
+               canvas.width = WIDTH;
+               canvas.height = HEIGHT;
+               function random(number){
+                //converti en nombre entier le nombre randomisé et multiplié par la valeur de number qui est l'argument donné en entrée de fonction
+                    return Math.floor(Math.random()*number);
+               } 
+
+               function dessineUnCercle(){
+                //    vide le canvas
+                   feuille.clearRect(0,0,WIDTH, HEIGHT);
+                //    
+                   feuille.beginPath();
+                //    
+                    // feuille.fillStyle = 'rgba(255,0,0,.5)';
+                    feuille.fillStyle = 'hsla('+ random(360) +',100%,50%,.5)';
+
+                    // dessiner un cercle de 30px de diamètre positionner à 100px en X et 100px en Y
+                    // fueille.arc(100,100,50%, startAngle, endAngle);
+                    feuille.arc(random(WIDTH),random(HEIGHT),random(50),0, 2 * Math.PI);
+                    feuille.fill();
+               }
+               
+               btn.addEventListener('click', dessineUnCercle);
+
+
+            </script>
+        </body>
+    </html>

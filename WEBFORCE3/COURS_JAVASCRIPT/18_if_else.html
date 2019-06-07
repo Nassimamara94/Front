@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>If Else</title>
+        </head>
+        <body>
+            <h1>If Else</h1>
+
+
+            <script>
+                // si la glace est au choco
+                // ALORS
+                // affiche j'aime le chocolat
+                // SINON 
+                // Affiche alert "j'aurais préféré du choco" 
+
+              /*  if(condition){
+                    alors
+                    instruction1;
+                } else{
+                    sinon 
+                    instruction2
+                } 
+                */
+                 // en français 
+              /*  if(si le parfum est choco){
+                    ALORS
+                    alert("affiche j'aime le chocolat");
+                } else{
+                   SINON
+                   alert("j'aurais préféré du choco");
+                } 
+                */
+               var glace = "choco";
+               if (glace == "choco") {
+                     alert("affiche j'aime le chocolat");
+                } else {
+                    alert("j'aurais préféré du choco");
+                }
+
+                portefermer = true;
+                if(portefermer){
+                    alert("ouvre la porte");
+                    
+                }
+                melon = false;
+                 if (melon) {
+                        alert("je mange du melon ");
+
+                    }else{
+                        alert("je mange des chips ");
+                        
+                    }
+                    
+
+            // SI SINON SI
+            //  Si j'ai du melon alors je mange du melon, sinon si j'ai des chips alors je mange des chips, sinon je ne mange rien 
+            var melon = false, chips = true;
+             if (melon) {
+                    alert("je mange du melon ");
+
+                } else if(chips)  {
+                    alert("je mange des chips ");
+
+                } else{
+                    alert("je ne mange rien  ");
+                    
+                }
+            
+            var frigo = {
+                melon : 0,
+                pasteque : 2,
+                papaye : 0,
+                parme : 1,
+                fromage : 0
+            }
+
+
+            if (frigo.melon && frigo.parme) {
+                    alert("je mange du melon et du jambon ");
+
+                } else if (frigo.fromage) {
+                    alert("je mange du framages ");
+
+                } else if (frigo.pasteque || frigo.papaye) {
+                    alert("je de la pasteque ou de la papaye");
+
+                } else{
+                  alert("je ne mange rien  ");
+                    }
+            </script>
+            
+        </body>
+    </html>

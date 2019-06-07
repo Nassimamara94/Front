@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            a:link{
+                color: orange;
+                text-decoration: none;
+            }
+            a:hover, a:focus{
+                text-decoration: underline;
+            }
+            a:visited{
+                color: teal; /* 16px */
+            }
+            a:active{
+                color: crimson;
+            }
+    :target{
+        background: lightblue;
+    }
+    #chap1{
+        background: lightcoral;
+    }
+    #chap2{
+        background: lightcyan;
+    }
+    #chap3{
+        background: lightgreen;
+    }
+    [title]{ /* select tout les élémnet qui on un attribut title */
+        font-weight: bold;
+    }
+    [href^=https] {
+        border: 1px dotted aqua;
+        background: url(images/noun_Openexternal_1126722.svg) no-repeat right;
+        background-color: antiquewhite;
+        /* background-position: 0 0 ; par défaut en haut à gauche
+        100% c'est à droite 50% centrer */
+        margin-bottom: 2rem;
+        padding: .5rem 2rem .5rem .5rem;
+        display: inline-block;
+        background-size: 15% auto;
+        }
+    
+    </style>
+</head>
+<body>
+    <a href="https://www.apple.com/" title="lien vers apple">Lien vers apple store</a> <br>
+    <a href="https://www.klm.com" title="lien vers apple">Lien vers KML</a> <br>
+    <a href="#chap1">Chapitre 1</a>
+    <a href="#chap2">Chapitre 2</a>
+    <a href="#chap3">Chapitre 3</a>
+
+    <div id="chap1">Lorem ipsum dolor sit amet iv</div>
+    <div id="chap2">Lorem ipsum dolor sit amet iv</div>
+    <div id="chap3">Lorem ipsum dolor sit amet iv</div>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+body{
+    width: 80%;
+    margin: 10px auto;
+    font-family: cursive;
+    background-color: antiquewhite;
+}
+#contenu{
+    background-color: red;
+    border: 2px solid black;
+}
+header, footer{
+    background-color: #8e3557;
+    height: 80px;
+    color: #fff;
+    text-align: center;
+    padding-top: 6px;
+}
+nav{
+    height: 40px;
+    background-color: #4a1a2c;   
+}
+section{
+    border: 20px solid lightcyan;
+    background-color: #e6f2af;
+    height: 500px;
+    text-align: center;
+}
+.A{
+    background-color: maroon;
+    width: 50%;
+    height: 250px;
+    float: left;
+}
+.B{
+    background-color: khaki;
+    width: 50%;
+    height: 250px;
+    float: right;
+}
+.C{
+    background-color: lightgoldenrodyellow;
+    width: 50%;
+    height: 250px;
+    float: left;
+}
+.D{
+    background-color: blue;
+    width: 50%;
+    height: 250px;
+    float: right;
+}

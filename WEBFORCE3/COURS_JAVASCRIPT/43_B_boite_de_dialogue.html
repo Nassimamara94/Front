@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boîte de dialogue perso</title>
+    <style>
+        .msgBox {
+            background: pink;            
+            width: 242px;
+            height: 100px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .imgAttention{
+            position: absolute;
+            left:.5rem;
+            top: 2rem;  
+        }
+        .msgBox p {
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        .msgBox button {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        body{
+            background: rgb(134, 130, 128);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="msgBox">
+                <p>Message</p>
+                <button>X</button>
+            </div>        -->
+            <!-- 
+
+             -->
+    <button id="btnAfficheDialog">Affiche la boite de dialogue</button>
+    <script>
+        var btnOpenBox = document.getElementById('btnAfficheDialog');
+
+        function afficheMessage(msgText) {
+            // on selectionne la balise body dans le DOM
+            var body = document.querySelector('body');
+            // dans une var boiteDialogue on crée un élément div avec la méthode .createElement
+            var boiteDialogue = document.createElement('div');
+            // on ajoute un attribut class .msgBox à la boiteDialogue avec la méthode setAttribute('nom de l'attribut', 'et nouvelle valeur');
+            boiteDialogue.setAttribute('class', 'msgBox');
+            body.appendChild(boiteDialogue);
+            // créer un paragrapghe 
+            var pMessage = document.createElement('p');
+            // envoyer une variable 
+            pMessage.textContent = msgText;
+            // ajoute ce p message comme enfant de la div
+            boiteDialogue.appendChild(pMessage);
+
+            var closeButton = document.createElement('button');
+            closeButton.textContent = 'X';
+            boiteDialogue.appendChild(closeButton);
+            closeButton.addEventListener('click', function () {
+                //  demande au body (parent de la div ) de supprimer la div (l'enfant) au click du bouton
+                boiteDialogue.parentNode.removeChild(boiteDialogue);
+            })
+            var attentionLogo = document.createElement('img');
+            attentionLogo.src = 'images/attention.png';
+            attentionLogo.setAttribute('class','imgAttention');
+            pMessage.appendChild(attentionLogo);         }
+           /* les parenthèse qui suivent affiche le meesage déclanche directelmnt la fonction sans attendre le click. Pour éviter ça faire une fonction anonyme */ 
+        // btnOpenBox.addEventListener('click', afficheMessage('le nouveau texte de la boite'));
+        btnOpenBox.addEventListener('click', function(){
+            afficheMessage('le nouveau texte de la boite');
+        });
+    </script>
+</body>
+
+
+</html>

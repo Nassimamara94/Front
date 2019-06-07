@@ -1,0 +1,251 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1036{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red255\green0\blue0;\red0\green0\blue255;\red0\green176\blue80;\red0\green77\blue187;}
+{\*\generator Riched20 10.0.17134}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\b\f0\fs36\lang12 JAVASCRIPT\par
+
+\pard\sa200\sl276\slmult1\fs28 Qualit\'e9\b0\fs26  pour \'eatre bon developpeur : \par
+- \ul RIGUEUR \ulnone : c'est primordiale dans l'\'e9criture du code. Se relire constament. Valider le code par le Validator du W3C.  Le tester t\'f4t et souvent.\par
+- \ul ORGANISATION \ulnone : rangement des fichiers et des dossiers, nomenclature, commentaires, faire du code simple qui est comment\'e9 et lisible. \par
+- \ul CAPACITE ABSTRACTION \ulnone : un web dev face \'e0 probl\'e8me doit savoir fractionner celui-ci en morceau plus digeste, et garder une vue globale de ce qu'il \'e9crit. \par
+- \ul AVANT \ulnone : de commencer \'e0 \'e9crire doit \'eatre capable de s'imaginer le r\'e9sultat du code qu'il va ex\'e9cut\'e9. \par
+\b\fs36 Intro :\par
+1 em = 1rem la taille du parent (par defaut 1 rem = 16px, sauf si reset)\par
+\b0\fs26 C'est le dev cot\'e9 client, aka Front End. C'est tout ce qui est trait\'e9 par le navigateur et affich\'e9 au visiteur (user). Le web Dev = auteur aka author. \par
+Le dev js permet principalement de r\'e9agir aux actions du user directement dans le browser. \par
+\b\fs28 Ajax \b0\fs26 : \b A\b0 nsynchronous \b J\b0 avascript \b A\b0 nd \b X\b0 ml (Permet de faire des changements sans avoir \'e0 recharger la page web). \par
+(Xml : language a balise sans interface, qui archive).\par
+La version actuelle de js, ES6 est l'impl\'e9mentation d'un language de script appel\'e9 par EcmaScript (standaris\'e9 dans les ann\'e9es 90 par NetScape).\par
+le r\'f4le du w3c est de mener le web a son plus haut potentiel. fiancer par des entreprises priv\'e9s. html, css, js maitenant.  Inventeur Brendan EICH qui est le co-fondateur du projet Mozilla. ( \'e0 inventer les onglets sur FireFox). ES est utilis\'e9 depuis 2009, on arrive \'e0 ES6. JS est arriv\'e9 pour ajouter de l'interactivit\'e9.\par
+js PERMET de faire :\par
+- Une action au click\par
+- V\'e9rifier des donn\'e9es entr\'e9es dans un formulaire\par
+- D\'e9tecter des changement de pages et lancer des lartes\par
+- Stocker des valeurs utiles dans des variables\par
+- Faire des op\'e9rations sur des morceaux de texte\par
+- Ex\'e9cute du code en r\'e9ponse \'e0 certains \'e9v\'e9nements se produisant sur une page web (vid\'e9o, scroll, etc...)\par
+- Cr\'e9er ou d\'e9clancher des animations\par
+- Faire des carousel, des menus d\'e9roulant, des galerie d'images int\'e9ractive, g\'e9rer de la vid\'e9o et l'audio\par
+-  Cr\'e9er des jeux vid\'e9os, graphiques 2d et 3d (datavisualisation), des appli compl\'e9tes fond\'e9es sur des bases de donn\'e9es, des applis mobile (online ou offline grace au API webworkforce permet du faire du cash manifest). JS est un language compact tout en restant souple. \par
+Les dev ont \'e9crit de nombreux outils sur le coeur de JS (core), cre\'e9ant des fonctionnalit\'e9es supl\'e9mentaires.\par
+Parmis ces outils : 2 cat\'e9gories de API : API navigateurs et API tierce partie (Application Programing Interface) \par
+API : en fran\'e7ais c'est Interface d'application pour navigateurs. \par
+Ce sont des bloc de codes d\'e9j\'e0 pr\'eats qui permettent aux dev de cr\'e9er plus facilement des programmes (boite \'e0 outils d\'e9j\'e0 developp\'e9 et test\'e9)  \par
+C'est du code en kit pour la programmation. Menuisier vs Ikea.\par
+\par
+\cf1\b\fs32 Les APIs navigateur \cf0\b0\fs26 : sont une partie int\'e9grante du navigateur et peuvent acc\'e9der \'e0 des donn\'e9es de l'environnement informatique (l'ordinateur ou le mobile) \par
+Par exemple: L'API DOM (Document Object Model) : permet de manipuler du HTML et du CSS  (cr\'e9er, modifier et supprimer du HTML). Apliquer des nouveaux style \'e0 la page de fa\'e7on dynamique. \par
+Exemple : cr\'e9er une pop-up, charger des nouveaux contenus dans une page web. Il s'agit de l'action du web. {{\field{\*\fldinst{HYPERLINK https://fr.wikipedia.org/wiki/Document_Object_Model }}{\fldrslt{https://fr.wikipedia.org/wiki/Document_Object_Model\ul0\cf0}}}}\f0\fs26\par
+\b API de g\'e9olocalisation \b0 : Permet de r\'e9cup\'e9rer des donn\'e9es g\'e9ographiques (position longitude / latitude de notre user)\par
+{{\field{\*\fldinst{HYPERLINK https://developer.mozilla.org/fr/docs/Using_geolocation }}{\fldrslt{https://developer.mozilla.org/fr/docs/Using_geolocation\ul0\cf0}}}}\f0\fs26\par
+\b API Canvas et WebGL \b0 : permet de cre\'e9r des graphiques annim\'e9es en 2D c'est canvas et en 3D \'e7a c'est webGL.\par
+{{\field{\*\fldinst{HYPERLINK https://developer.mozilla.org/fr/docs/Web/HTML/Element/canvas }}{\fldrslt{https://developer.mozilla.org/fr/docs/Web/HTML/Element/canvas\ul0\cf0}}}}\f0\fs26\par
+\b API Video et audio \b0 : permet de lire de la video et de l'audio sans plugin\par
+\b API web RTC \b0 : permet de faire peer to peer\par
+{{\field{\*\fldinst{HYPERLINK https://developer.mozilla.org/fr/docs/Web/API/WebRTC_API#Connection_setup_and_management }}{\fldrslt{https://developer.mozilla.org/fr/docs/Web/API/WebRTC_API#Connection_setup_and_management\ul0\cf0}}}}\f0\fs26\par
+\b API Web Storage \b0 : permet de stocker le contenu int\'e9grale d'une site web. Faire des applications offline (app offline utilise cette tech)\par
+\b API Web Workers \b0 : extention AJAX  \par
+{{\field{\*\fldinst{HYPERLINK https://developer.mozilla.org/fr/docs/Web/API/Web_Workers_API }}{\fldrslt{https://developer.mozilla.org/fr/docs/Web/API/Web_Workers_API\ul0\cf0}}}}\f0\fs26\par
+Compresser de la video dans les format web : OGG / MP4 / WebM {{\field{\*\fldinst{HYPERLINK https://handbrake.fr/ }}{\fldrslt{https://handbrake.fr/\ul0\cf0}}}}\f0\fs26\par
+\cf1\b\fs32 API Tierce Partie : \cf0\b0\fs24 Librairies fournis par des fournisseurs de contenus. Ne font pas partie par d\'e9faut du navigateur , on doit r\'e9cup\'e9rer le code de la librairie (faire un lien vers la librairie ) pour pouvoir l'utiliserdans son site.\par
+\b\fs32 L'API Twitter \b0\fs24 : qui permet d'afficher les derniers tweets dans votre page.\par
+{{\field{\*\fldinst{HYPERLINK https://developer.twitter.com/ }}{\fldrslt{https://developer.twitter.com/\ul0\cf0}}}}\f0\fs24\par
+\b\fs32 API Google map : \b0\fs24 permet d'afficher des carte personalis\'e9e\par
+{{\field{\*\fldinst{HYPERLINK https://cloud.google.com/maps-platform/ }}{\fldrslt{https://cloud.google.com/maps-platform/\ul0\cf0}}}}\f0\fs24\par
+\b\fs28 AUTRE API tierce partie \b0\fs24 : \par
+programmableweb.com/category/all/apis\par
+\par
+\cf1\fs32 S\'e9paration des concepts (r\'e8gles de bases) :\cf0\fs24\par
+- Pas de css dans le js\par
+- Pas de html dans le js\par
+- Pas de css dans le HTML (css inline)\par
+\par
+\b\fs36 Script :\b0\fs24\par
+"=" est un op\'e9rateur d'assignation. \par
+\b\fs36 Les variables : \b0\fs24\par
+Sont un conteneur qui permet de stocker des valeurs. Pour commencer il faut les d\'e9clarer avec le mot cl\'e9 var, suivit du nom de la variable. On d\'e9clare une variable en lui donnant un nom, en lui assignat une valeur avec le signe "=".\par
+Exemple :\par
+a = 4; \par
+Ou var a = 4;  (le mot cl\'e9 var ici indique une variable globale)\par
+Ou let a = 4; ( ES6 ne peut utiliser dans du ES5 ) \par
+Babbel permet de revenir \'e0 ES5. \par
+d = 10; plus tard dans le script d = 8;  on vient de r\'e9asigner la var d. vider la boite pour remplacer par la valeur 8.\par
+Pour tester une var on a 2 choix, on ouvre la console on \'e9crit le nom de la var .\par
+\'e0 droite du >> et  on appuie sur entrer. Sinon on alert la var. Sinon on l'affiche dans la console = \cf3 console\cf0 .\cf1 log\cf0 (\cf4 d\cf0 );\par
+Si on veut faire un calcul avec une var non d\'e9finit, le navigateur affichera une erreure en console : r\'e9f\'e9rence error c is not defined. Et si erreur \'e0 la casse, m\'eame r\'e9sultat. \par
+\par
+\b\fs36 Bool\'e9en : \b0\fs24 TRUE or FALSE \par
+console.log(12 <= 13); true \par
+\b\fs36 NaN \b0\fs24 : Not A Number \par
+Condition :\par
+SI(un condition est vrai ou faux) \{\par
+ALORS \par
+fait une chose;\par
+fait autre chose\par
+\}\par
+en pseudo code algorithmique\par
+SI(condition)\{\par
+ALORS\par
+Instruction 1;\par
+Instruction 2;\par
+\}\par
+\b\fs36 Array : \b0\fs24\par
+On utilise un idex (la cl\'e9) pour r\'e9cup\'e9rer une info stock\'e9e dans un tableau . On commence \'e0 compter \'e0 partir de z\'e9ro. \par
+Un tableau associatif /  un dictionnaire\par
+voir 16_array_et_objet.html \par
+\b\fs36 Les op\'e9rateurs : \b0\fs24\par
+La pr\'e9dence des op\'e9rateurs ce fait comme les maths de base. \par
+la multiplcation first /!\\\par
+voir 17_les_operateurs.html\par
+"<" strictement inf\'e9rieu\par
+"<=" inf\'e9rieur ou \'e9gal\par
+">" strictement sup\'e9rieur\par
+">=" sup\'e9rieur ou \'e9gal\par
+"===" \'e9galit\'e9 stric en valeur et en type \par
+"=="  en valeur \par
+"!=" contraire de (Not) non \'e9gal \'e0 \par
+\par
+\b\fs36 Le modulo :\b0\fs24\par
+Le reste d'une division.\par
+voir 17_les_operateurs.html\par
+\b\fs36\par
+If Else:\par
+\b0\fs24   if(condition)\{\par
+                    alors\par
+                    instruction1;\par
+                \} else\{\par
+                    sinon \par
+                    instruction2\par
+                \}\par
+Structure conditionnelle SI SINON\par
+voir 18_if_else.html\par
+\b\fs36 Les fonctions:\b0\fs24\par
+permettent de regrouper une s\'e9rie d'instructions pour pourvoir les r\'e9utiliser.\par
+voir : 19_fonction.html\par
+un fichier js contiens des instructions, plac\'e9s les unes \'e0 la suite des autres.  \par
+Chacune peut \'eatre vu comme un ordre donn\'e9 au moteur js, un action que l'on veut r\'e9aliser \'e0 la mani\'e8re d'une recette de cuisine.\par
+1. Faire fondre le beurre\par
+2. M\'e9langer le beurre et la farine \par
+3. verser le choco  petit \'e0 petit\par
+4. ect.... \par
+Les instructions se suivent et sont \'e9ffectu\'e9s les unes \'e0 la suite des autres, \cf1\ul du haut vers le bas\cf0\ulnone . On dit que le navigateur Parse (analyse) le document dans l'ordre du flux.  Chaque instruction doit se finir avec un point virgule (;) afin d'indiquer au navigateur que l'instruction est termin\'e9.\par
+On appelera une fonction par son nom (faireUnGateau). La fonction alert est une fonction native, c'est \'e0 dire int\'e9grer au navigateur, qui contient les instructions suivantes. \par
+exemple:\par
+1. cr\'e9er la b\'eeote de dialogue\par
+2. positionne dans la fen\'eatre     \par
+3. cr\'e9er un background semi-transparent sur toute la page \ul\par
+\ulnone 4. un bouton avec le texte ok et un \'e9v\'e9nement click\par
+5. cr\'e9er un zone de texte qi affichera le texte de l'alerte \'e0 pr\'e9sent\'e9 au visiteur\par
+\par
+Nous on a juste besoin d'utiliser la fonction alert en lui donnant un argument. alert('argument');\par
+la fonction \'e9x\'e9cutera toute les fonctions \'e0 chaque fois. \par
+Les fonctions querySelector et alert sont dispo dans le navigteur. \cf1\b Ce sont des m\'e9thodes\cf0\b0 .\par
+Une chose qui ressemble \'e0 une var et qui est suivie de parenth\'e8se, alors c'est une fonction. Les fonctions prennent souvent des arguments, des bouts de donn\'e9es n\'e9cessaires pour que la fonction fasse sont travail. Les arguments sont entre parenth\'e8se, s\'e9par\'e9 par des virgules si plusieurs. \par
+alert(); fait aparaitre une pop-up, mais on doit lui doner une string comme argument pour dire \'e0 la fonction quoi afficher dans la fen\'eatre.\par
+Nous pouvons aussi \'e9crire nos fonction. Pour d\'e9clancher un fonction, il faut l'invoqu\'e9, car elle ne s'execute pas toute seule. Un fonction qui n'a pas son propre nom est une fonction anonyme. \par
+invoquer une fonction: nom_fonction + parenth\'e8se = function_name()\par
+\b\fs36 Evenements \b0\fs24 : voir : 20_intro_evenement.html\par
+addEventListener attend 2 arguments : \par
+1.l'\'e9venement qui va survenir\par
+2. l'action qu'on veut d\'e9clancher lorsque l'\'e9venement survient\par
+\cf1 Modifier une image au click voir \cf0 : 22_bis_mozilla.html\par
+La m\'e9thode addEventListener pour ajouter un \'e9couteur au click sur l'image.\par
+\cf1 SetAttribute\cf0  : intervertir les images avec setAttribute,  attends 2 arguments\par
+1. l'attribut sibl\'e9 (src, href, etc...)\par
+2. sa nouvelle valeur (une autre source, un autre lien, etc...)\par
+\cf1 Changer un titre pour un message personalis\'e9 : \cf0\par
+prochaine recette fonction ajouter un message personalis\'e9 en changant le titre de la page, ce message sera gard\'e9 quand l'utilisateur quitte le site et s'il y revient plus tard. On va conserver ce message dans le cache du navigateur en utiliosant l'API webstorage. Au final on ajoutera une option su le boutton pour changer l'utilisateur et le message d'accueil si besoin. \par
+localStorage = fonction API setItem = m\'e9thode \par
+localStorage.setItem('nomUtilisateur', monNom); = permet de garder le nom utilisateur dans le cache \par
+Pour tester il faut savoir vider le localStorage = localStorage.clear();\par
+\b\fs36 Les boucles \b0\fs24\par
+voir 23_boucle_for_while.html\par
+<script>\par
+            for(var i = 0; i < 5; i++)\{\par
+                document.write(i);\par
+            \}\par
+        </script>\par
+            1. dans l'ordre on initialise la var i = 0;\par
+            2. ensuite tant que i < 5 ; on \'e9x\'e9cute la boucle \par
+            3. ensuite \'e0 chaque fin de boucle on incr\'e9ment de 1 : i++;\par
+           Ici la boucle va s'\'e9x\'e9cuter 5 fois. valeur 0,1,2,3,4 et \'e0 5 la boucle sera fausse, donc la boucle ne va pas s'\'e9x\'e9cuter. \par
+\b\fs36 Canvas \b0\fs24 : \par
+\cf1 cr\'e9ation de cercle position d\'e9finit \cf0 : voir 24_cercle_canvas.html \par
+/!\\ Bien v\'e9rifier de ne jamais mettre les parenth\'e8ses quand on appelle une fonction dans un \'e9v\'e9nement. sinon la fonction s'\'e9x\'e9cute toute seule sans attendre le click de la souris /!\\\par
+\par
+\cf1 cr\'e9ation de cercle position et couleur al\'e9atoire  \cf0 : voir 25_cercle_aleatoire_canvas.html \par
+Math.floor convertie en nombre entier \par
+\cf1 cr\'e9ation de plusieurs cercle avec position et couleur al\'e9atoire \cf0 : \par
+voir 26_sans_cercle_aleatoire_canvas.html \par
+\cf1 changer la couleur d'un background \cf0 au click voir : 27_change_bg_aleatoire\par
+\cf1 changer la couleur d'un background qu'on click\cf0  n'importe quel \'e9l\'e9ment s\'e9lectionner avec .target voir : 29_change_bg_de_l_objet_clicker\par
+\cf1 Incr\'e9mentation et d\'e9cr\'e9mentation \cf0 voir : 30_incrementation et decrementation.html\par
+\cf1 Pour les boucle While \cf0  voir : 31_boucle_while.html  - 32_while_exercice.htlm\par
+33_while_break.html 34_do_while_for_in.html\par
+\b\fs36\par
+La port\'e9e des fonctions et des variables \b0\fs24 voir le dossier portees_variable et tous les fichier html dedans  35 \'e0 39\par
+\b\fs36 Les fonctions imbriqu\'e9es et les closures. \par
+\b0\fs24 40_fonction_imbriquee_closure.html\par
+41_bis_fonctions_imbriquees.html\par
+\par
+Centrer un objet en html peut importe sa dimension transform : translate\par
+\cf1 Fonction anonyme et avec argument \cf0 voir \par
+42_boite_de_dialogue_perso.html\par
+43_bis_boite_de_dialogue.html\par
+\b\fs36 DSN : tous stocker aux states\b0\fs24\par
+r\'e9f\'e9rence tout les sites de la planete dans l'ordre alphab\'e9tique et par extensions .fr .us .com\par
+8 dans le monde\par
+4 d\'e9di\'e9 \'e0 la CIA\par
+ip local = user to FAI to dsn to serveur ip toto.com\par
+chaque protocol \'e0 un outil serveur \par
+tfp = protocol ftt\par
+mail = protocol pour mail\par
+web = protocol pour le web\par
+forum = protocool pour les forum\par
+tcip = interdit de regarder dedans \par
+toujours r\'e9duire le poind des fichiers et des images, des librairies, etc...\par
+REJEX ? \par
+\par
+\par
+\par
+\par
+\par
+\par
+\b\fs36\par
+\b0\fs24\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\cf1\b\fs32\par
+\cf0\b0\fs26\par
+ \par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\fs22\par
+}
+ 

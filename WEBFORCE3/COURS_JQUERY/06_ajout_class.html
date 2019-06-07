@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Ajout de classe avec jquery</title>
+            <style>
+                .tailleTextex2{
+                    font-size: 2em; 
+                }
+                .couleurFond{
+                    background-color: teal;
+                }
+                .carre{
+                    width: 200px;
+                    height: 200px;
+                    background-color: forestgreen;
+                    text-align: center;
+                    line-height: 200px;
+                    transition: 1s;                
+                }
+                .tourne{
+                    background-color: gold;
+                    transform: rotate(1turn)  scale(.5);
+                    border-radius: 50%;
+                 
+                }
+
+            </style>
+        </head>
+        <body>
+            <h1>Ajout de class avec jquery</h1>
+            <strong>Je suis gras</strong> <br><br>
+            <em>je suis italic</em> <br><br>
+            <u>je suis du text souligné</u> <br><br>
+            <button>Retire la class</button> <br><br>
+            <div class="carre">Contenu carre</div>  <br> <br>
+            <script src="js/jquery-3.3.1.min.js"></script>
+            <script>
+                $(function () {
+                console.log('hello');
+                /* ajout de la class tailleTextex2 à la balise u */
+                
+                $('u').addClass('tailleTextex2');
+                    
+
+                /* ajout de la class couleurFond à la balise strong au click sur la balise em */
+                $('em').on('click', function(){
+                    $('strong').addClass('couleurFond');                    
+                })
+             var retireClasse = function () {
+             $('u').removeClass();
+                    }
+                    /* ici on retire la classe de la balise u au click sur le bouton */
+            $('button').on('click', retireClasse);
+                    /* Fonction tourne carre, exécuter au click sur le carré
+                    ajoute la class tourne au carre */
+                    var tourneCarre = function(){
+                        // au click execute la classe, au double click retire la classe
+                        $(this).toggleClass('tourne');                        
+                    }
+                    $('.carre').on('click',tourneCarre);
+                }) /* Fin su scope jQuery */
+
+
+            </script>
+        </body>
+    </html>

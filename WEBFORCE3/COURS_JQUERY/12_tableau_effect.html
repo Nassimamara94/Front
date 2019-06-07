@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Tableau</title>
+    </head>
+    <style>
+        img{
+            max-width: 35%;
+        }
+        </style>
+    <body>
+        <h1>Afficher et Cacher des images</h1>
+        <p>
+            <img src="images/boat.jpg" alt="">
+            <img src="images/turtle.jpg" alt="">
+            <img src="images/fishing.jpg" alt="">
+            <img src="images/discus-fish.jpg" alt="">
+        </p>
+        <button class="btnDisparait">Disparait</button>
+        <button class="btnApparait">Apparait</button>
+        
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script>
+        $(function(){
+            // alert('dfg');
+            $('.btnDisparait').click(function(){
+                /* selectionne la 1ère img, et ajoute une fonction de cacher la suivante  */
+                 $('img').first().hide('slow',function hideNextOne(){
+                    $(this).next('img').hide('slow', hideNextOne);
+                 });
+
+
+            })// fin du click .btnDisparait
+            $('.btnApparait').click(function(){
+                /* selectionne la 1ère img, et ajoute une fonction de cacher la suivante  */
+                 $('img').first().show('slow',function showNextOne(){
+                    $(this).next('img').show('slow', showNextOne);
+                 });
+
+
+            })// fin du click .btnDisparait
+
+
+        }) // fin du scope 
+        </script>
+    </body>
+    </html>

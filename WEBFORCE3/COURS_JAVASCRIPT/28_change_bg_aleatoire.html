@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Changer le Backgroung html avec JS</title>
+        </head>
+        <style>
+            
+        </style>
+        <body>
+
+            <button>CHANGER LA COULEUR</button>
+            <script>
+                var btn = document.querySelector('button');
+                 function random(number) {
+                        //converti en nombre entier le nombre randomisé et multiplié par la valeur de number qui est l'argument donné en entrée de fonction
+                        return Math.floor(Math.random() * number);
+                    } 
+
+                function changeBg(){
+                    // alert('ok');
+                    document.body.style.backgroundColor='hsla(' + random(360) +', 70%, 54%,1)';
+
+                }
+                btn.addEventListener('click', changeBg);
+            </script>
+        </body>
+    </html>

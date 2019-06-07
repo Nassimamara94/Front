@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1 formulaire : form
+    2. liste deroulante : select
+    3. plusieur option
+    4. -->
+    <form action="#">
+
+        <label for="animaux">Sélectionne ton animal</label>
+        <select name="animaux" id="animaux" >
+            <option value="#" active disabled>Choisissez votre animal préféré</option>
+            <option value="chien">Chien</option>
+            <option value="cheval">Cheval</option>
+            <option value="poisson">Poisson</option>
+        </select>
+    </form>
+    <p class="info"></p>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            console.log('hello');
+            $('#animaux').change(function(){
+                $('.info').html('vous venez de séléctionner votre animal préféré : ' + $(this).val());
+            })
+            
+
+        }) // fin du scope
+    </script>
+</body>
+</html>

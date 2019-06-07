@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Document</title>
+        </head>
+        <style>
+        .grand{
+            font-size: 2em;
+        }
+        .vert{
+            color: green;
+        }
+        .petit{
+            font-size: .8em;
+        }
+        .rouge{
+            color: red;
+        }
+        div{
+            background: cornflowerblue;
+        }
+        </style>
+        <body>
+
+            <p id="pierre" class="grand vert">pierre</p>
+            <p id="jean" class="petit rouge">Jean</p>
+            <div>Mon Div</div>
+            <article>je suis un article</article>
+            <p class="jaune">paragraphe</p>
+
+            <script src="js/jquery-3.3.1.min.js"></script>
+            <script>
+            $(function(){
+
+        // console.log('hello');
+        // retirer une class et en ajouter une autre
+            // $('#pierre').removeClass('vert').addClass('rouge');
+            // $('#pierre').removeClass('grand').addClass('petit');
+            // retirer une class et en ajouter une autre avec la méthode de chainage
+            $('#pierre').click(function(){
+                $(this).removeClass('vert grand').addClass('rouge petit');
+            }) //fin 
+            $('#jean').click(function(){
+                // si jean a la class .rouge alors instruction, Sinon instruction
+                if($(this).hasClass('.rouge'))
+                alert('jean est rouge');                    
+                 else
+                alert("jean n'est rouge");
+                }) // fin condition
+                // 1. la div disparait 2 sec
+                $('div').hide(2000, function(){
+                /* 2. ici l'article diparait 1 sec, 3. en changant son css, 4. on attend 2 sec, puis quand l'action est terminée 5. on fait un callback au bout d'une demi sec*/                    
+                    $('article').hide(1000).css('color', 'coral').delay(2000).show(500, function(){
+                            // alert('fin hide');    
+                    });
+                              
+                })// fin du hide
+                $('.jaune').fadeOut('slow', function(){
+                    $(this).css('background-color', 'yellow').fadeIn(2000, function(){
+                        alert('fin du fade in');
+                    })
+                })
+              
+                
+
+            })/* FIN SCOPE */
+            
+            </script>
+            
+        </body>
+    </html>

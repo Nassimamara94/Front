@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EXERCICE avec La boucle while</title>
+</head>
+
+<body>
+    <h1>EXERCICE avec La boucle while</h1>
+    <p>Faire demander à l'internaute un prénom, ainsi que celui de ses fréres et soeurs, dans une boite de dialogue.</p>
+    <p>Utiliser la boucle while qui va demander à chaque passage dans la boucle un prénom supplémentaire. La boucle s'arrête quand l'utilisateur choisira de ne plus entrer de prénom.</p>
+    <p>Puisque que la vatriable "proceed = true", la condition sera toujours une condition vrai, la boucle continura de jouer infinément.</p>
+    <pre>
+         var prenoms = '', prenom, proceed = true; 
+         // ICI ON A UNE BOUCLE INFINI 
+         while(proceed){ 
+             prenom = prompt("saisissez un prénom?"); 
+            } 
+            alert(prenom);
+    </pre>
+    
+    <script>
+       
+        var prenoms = '', prenom, proceed = true; 
+            //  ICI ON A UNE BOUCLE INFINI 
+
+        // while(proceed){
+        //        prenom =  prompt("saisissez un prénom ?");
+        //     }
+        //     alert(prenom);
+        while(proceed){
+            prenom = prompt("saisissez un prénom ?");
+                /* ici on va tester si l'utilisateur entre un prénom dans le prompt alors on ajoute ce prénom dans le tableau prénoms. 
+                Sinonon arrête la boucle. En mettant la variable proceed à false.
+
+                */
+                if(prenom){
+                    prenoms +=  prenom + ' '  ; // on ajoute le nouveau prénom au tableau prenoms 
+                }else{
+                    proceed = false; // si aucun prénom entrer, on arrête la boucle en mettant "proceed = false"
+                }
+                 
+         } // fin de la boucle while
+         document.write(prenoms); // affiche les prénoms les uns à la suite des autres 
+    </script>
+
+</body>
+
+</html>

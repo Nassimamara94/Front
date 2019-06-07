@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>KEYDOWN KEYUP KEYPRESS</h1>
+        <form action="#">
+            <label for="cible">thshtjsh</label> <br>
+            <textarea name="cble" id="cible" cols="30" rows="10">               
+            </textarea>
+        </form>
+        <p class="info">paragraphe</p>
+        <span class="testkey">fjf</span>
+      
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script>
+            $(function () {
+                // console.log('hello');
+                // pendant qu'on tape sur le clavier
+                $('#cible').keydown(function(){
+                    $(this).css('background-color', 'red');
+                })
+                // après avoir taper sur le clavier                
+                $('#cible').keyup(function(){
+                    $(this).css('background-color', 'green');
+                })
+                // 
+                $('#cible').keypress(function (ev){
+                    $('.info').text(ev.which);
+                })              
+              
+            })
+        </script>
+        
+    </body>
+    </html>

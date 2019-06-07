@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Les opérateurs</title>
+            <style>
+            body{
+                font-weight: bold;
+                font-size: 2rem;
+                color: steelblue;
+            }
+            </style>
+        </head>
+        <body>
+            <h1>Les opérateurs</h1>
+
+
+            <script>
+                var operation1 = 1 + 2;
+                document.write("var operation1: " + operation1 + '<br><br><br><hr>');
+
+                maChaine = "je m'appelle" + 'Sarah';
+                document.write("var maChaine: " + maChaine + '<br><br><br><hr>');
+
+                // La prédence des opérateurs ce fait comme les maths de base. 
+                var operation2 = 2 + 3 * 5;
+                document.write("var operation2: " + operation2 + '<br><br><br><hr>');
+                
+                // tester avec les parenthèses pour voir la priorité 
+                var operation3 = (2 + 3) * 5;
+                document.write("var operation3: " + operation3 + '<br><br><br><hr>');
+              
+              
+                var operation4 = 10 % 2;
+                document.write("var operation4: " + operation4 + '<br><br><br><hr>');
+                var operation5 = 17 % 3;
+                document.write("var operation5: " + operation5 + '<br><br><br><hr>');
+                
+                var monVehicule1 = 'voiture';
+                var monVehicule2 =  'camion';
+                
+                // egal en type et en valeur
+                document.write("si var monVehicule2 est égal à vélo: " + (monVehicule2 === "vélo") + '<br><br><br> <hr>');                     
+                var monChiffre = 20;
+                document.write("si var monChiffre est égal à 20 en type et en valeur : " + (monChiffre === 20) + '<br><br><br> <hr>');      
+                // non égal à : true car 2 strictement différent de 3
+                var unChiffre = 3;
+                  document.write("si var unChiffre est not égal à 2: " + (unChiffre !== 2) + '<br><br><br> <hr>');  
+                // autre façon d'écrire not
+                  var lastChiffre = 4;
+                  document.write("si var lastChiffre est not égal à 2: " + !(lastChiffre === 4) + '<br><br><br> <hr>');  
+                  
+
+
+            </script>
+            
+        </body>
+    </html>

@@ -1,0 +1,68 @@
+body{
+    margin: 0 auto;
+    background: white;
+ 
+}
+div{
+    width: 90%;
+    margin: 0 auto;
+ 
+     text-align: center;
+}
+.boite1{
+    height: 5em;
+    width: 5em;
+    background: green;
+    border: 2px solid black;
+    border-radius: 10px 20px 30px 40px;
+    float: left; 
+    margin: 5px;
+}
+.boite2{
+    height: 5em;
+    width: 5em;
+    background: lightblue;
+    border: 2px solid black;
+    border-radius: 40px 0;
+    float: left; 
+    margin: 5px;
+}
+.boite3{
+    height: 5em;
+    width: 5em;
+    background: lightgreen;
+    border: 2px solid black;
+    border-radius: 40px 40px;
+    float: left; 
+    margin: 5px;
+}
+.boite4{
+    height: 5em;
+    width: 5em;
+    background: lightcoral;
+    border: 2px solid black;
+    border-radius: 10px 30px;
+    float: left; 
+    margin: 5px;
+}
+.boite5{
+    height: 5em;
+    width: 5em;
+    background: darkorange;
+    border: 2px solid black;
+    border-radius: 10px 30px;
+    float: left; 
+    margin: 5px;
+}
+.boite6{
+    height: 5em;
+    width: 5em;
+    background: whithe;
+    border: 2px solid white;
+    border-radius: 30px 30px;
+    float: left; 
+    margin: 5px;
+}
+.clear{
+        clear: both;
+}

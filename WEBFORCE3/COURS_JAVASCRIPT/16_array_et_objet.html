@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>Array et Objet</title>           
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        </head>
+        <body>
+
+            <h1>Array et Objet</h1>
+            <script>
+                // ici on crée un tableau
+                var monTableau = ['fraises', 'oranges', 'melons'];
+                // le type est un objet
+                document.write("ici le typeof de la var maTableau. C'est un : " + (typeof monTableau) + '<br><br> <hr>');
+                //  si le nom du constructeur est égal à array, alors affiche la string array
+                 if (monTableau.constructor.name ==  'Array'){
+                      document.write("Ma var monTableau: " + monTableau + '<br><br> <hr>');
+
+                 }
+                //  on utilise un idex (la clé) pour récuperer une info stockée dans un tableau.  
+                // on commence à compter de zéro
+                 document.write(monTableau[1] + '<br><br>');
+
+              traduc = {
+                  "fraises" : "strawberries",
+                  "pommes" : "apples",
+                  "poires" : "pears"
+              };
+            //   on récupére un info dans un dictinnaire, on utilise des mots clés (index)
+                 document.write(traduc.pommes + '<br><br>');
+                 document.write(traduc.fraises + '<br><br>');
+                 document.write(traduc.poires + '<br><br> <hr>');
+
+
+               frigo = {
+                    "fruits": ["ananas", " mangues", " papaye"],
+                    "legumes": ["poireaux", " courgettes"],
+                    "laitages": ["yaourts", "lait"],                    
+                };
+                 document.write(frigo.legumes[1] + '<br><br>');
+                 var mesFruits = frigo.fruits;                 
+                 document.write(frigo.fruits + '<br><br>');
+                 document.write(frigo.fruits.length + '<br><br>');
+
+                 document.write(frigo["legumes"] + '<br><br>');
+          </script>
+        </body>
+    </html>

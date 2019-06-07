@@ -1,0 +1,198 @@
+*{ 
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #769376;
+    width: 50%;
+    margin: 0 auto;
+    color: #262626;
+    font-family: 'Caveat Brush', cursive;
+}
+header{
+    width: 100%;
+    background: url(../images/woodPlank.jpg);
+}
+/* le petit trait rose en dessous du h1 */
+header .rec{
+    width: 3%;
+    margin-left: 3%;
+    height: 0.5vh;
+    background-color: deeppink;
+    border: 1px solid transparent;
+}
+header i{
+    font-size: 2em;
+}
+/* ce soir en haut à gauche de la page */
+h1{
+    width: 25%;
+    font-weight: 900;
+    font-style: italic;
+}
+/* le e de "ce" */
+em{
+    font-size: 0.8em;
+    text-decoration: underline;
+    vertical-align: text-top;
+}
+/* ma nav */
+nav{
+    text-align: center;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    bottom: 4vh;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 5%;
+}
+a{
+   font-weight: bold;
+   text-decoration: none;
+   color: inherit;
+   font-family: 'Times New Roman', Times, serif;
+}
+/* le triangle */
+#triangle{
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-left-width: 110px;
+    border-right-width: 0px;
+    border-top: 110px solid rgba(255, 51, 204, 0.5);
+    position: absolute;
+    right: 22%;
+    top: 6vh;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+/* la section qui à le sert en background */
+header section{ 
+    background: url(../images/cerf.svg) no-repeat;
+    width: 20%;
+    height: 30vh;
+    margin: 2vh 40% 0 40%;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+/* le flèche bas */
+header span{
+    width: 20%;
+    margin-left: 48%;
+    font-size: 2em;
+    color: deeppink;
+}
+/* Mes  section */
+#Our_Story,#Fare,#Drink{
+    width: 100%;
+    height: auto;
+    background: url(../images/pattern.jpg);
+    text-align: center;   
+}
+section h2,h3{
+    font-family: 'Times New Roman', Times, serif;
+}
+/* les 3 block de texte */
+.texte{
+    display: inline-block;
+    width: 35%;
+    height: auto;
+    vertical-align: middle;
+    margin: 0;
+   
+}
+.texte p{
+    margin-bottom: 1.5em;
+}
+section span{
+    text-transform: uppercase;
+    color: deeppink;
+}
+/* le trait en dessous des titres des sections */
+.traitrose{
+    width: 9%;
+    margin: 0.8em auto;
+    height: 0.4vh;
+    background-color: deeppink;
+    border: 1px solid transparent;
+}
+/* retourner l'image de la 1ère section */
+#asperge{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+/* les 3 photos à coté des textes */
+.photo{
+    display: inline-block;
+    width: 64.55%;
+    height: auto;
+    vertical-align: middle;
+    margin: 0;
+}
+/* mettre les images au bonnes dimenssions */
+.photo img{
+    width: 100%;
+    height: auto;
+}
+.texte .graine{
+    width: 30%;
+    margin: 0 auto;
+}
+.graine img{
+    width: 100%;
+    height: auto;
+}
+/* le derniere image avant le footer  */
+.oeuf{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background: url(../images/pattern.jpg); 
+}
+.oeuf img{
+    width: 100%;
+    height: 100%;
+}
+/* mon footer commence ici  */
+footer{
+    width: 100%;
+    height: auto;
+    background: url(../images/pattern.jpg); 
+    margin: 0 auto;
+    text-transform: uppercase; /* mettre le texte en MAJ*/
+}
+footer h2{
+    font-size: 1.5em;
+    margin-bottom: 1vh;
+    font-style: oblique;
+    margin-left: 10%;
+}
+.traitfooter{
+    width: 2%;
+    margin: 0.2em 0 0.5em 13%;
+    height: 0.2vh;
+    background-color: deeppink;
+    border: 1px solid transparent;
+}
+footer p{
+    font-size: 0.8em;
+    margin: 0.5em 0 0.5em 10%;
+}
+/* les icones réseaux sociaux */
+footer span{
+    position: relative;
+    left: 85%;
+    color: deeppink;
+}
+footer span i{
+    margin: 0 0.2em;
+    
+}

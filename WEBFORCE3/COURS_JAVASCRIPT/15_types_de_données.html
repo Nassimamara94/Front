@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>Types de données</title>           
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        </head>
+        <body>
+
+            <h1>Types de données</h1>
+            <script>
+                maVariable = 10;
+                document.write('ici le typeof de la var maVariable ' + typeof maVariable + '<br><br>');
+
+                document.write("ici le typeof de NaN: " + isNaN(100) + '<br><br>');
+                // ici la string est convertie en number par le navigateur avant d'être testé
+                document.write("ici le typeof de NaN: " + isNaN('100') + '<br><br>');
+                // ici renvoie true, car on a clairement true, faut se méfier de NaN quand string est un nombre
+                document.write(isNaN("ici le typeof de NaN: " + 'abec100') + '<br><br>');
+
+                var monTexte = 'soleil';
+                document.write("ici le typeof de la var monTexte: c'est une  " + typeof monTexte + '<br><br>');
+                
+                var monB
+                ooleen = true;
+                document.write("ici le typeof de la var monTexte: c'est une  " +  typeof monBooleen + '<br><br>');
+
+                var maListe = ['pommes', 'poires', 'bananes'];
+                document.write("ici le typeof dela var maListe. C'est un : " + (typeof maListe) + '<br><br>');
+                //  si le nom du constructeur est égal à array, alors affiche la string array                
+                 if (maListe.constructor.name ==  'Array'){
+                      document.write("ici la var maListe: " + maListe + '<br><br>');
+
+                 }
+
+              
+                
+
+
+            </script>
+        </body>
+    </html>

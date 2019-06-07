@@ -1,0 +1,87 @@
+body{
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+    background: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+div#conteneur{
+    width: 770px; /* largeur*/
+    margin:0 auto; /* marge auto qui centre le bloc après l'avoir remonté le plus haut possible dans mon affichage*/
+    text-align: left; /*centre le contenu dans mon conteneur*/
+    border: 2px solid #AABB44; /*bordure autour de la page*/
+    background: white; /* couleur de fond de mon conteneur*/
+}
+h1#header{
+    height: 258px;
+    background: url(../img/apple.jpg) no-repeat left top;
+    margin:0;
+}
+h1#header a{ /* on donne les memes dimenssions aux liens, avec la propriété display et la valeur block. cela transforme les liens en éléments de type block pour qu'on puisse
+    donner des tailles*/
+    width: 400px;
+    height: 70px;
+    display: block;
+    background: url(../img/title.gif) no-repeat;
+    position: relative;
+    left:350px;
+    top: 15px;
+    text-indent: -5000px;/* pour pouvoir cacher le texte hors de la page */
+}
+ul#menu{
+    height: 35px; /* hauteur de l'image en fond */
+    margin: 0;
+    padding: 0;
+    background: url(../img/bg_menu.gif) repeat 0 -25px;
+    list-style: none; /* on cache les puces */
+}
+ul#menu li{
+ float: left; /* pour les afficher horizontalement */
+ text-align: center; /* pour centrer le texte */ 
+}
+ul#menu li a{ /* travaille sur les liens dans la liste à puce */
+    width: 130px;
+    line-height: 25px; /* hauter de la ligne*/
+    font-size: 1.2em; /* taille de la police */
+    font-weight: bold; /* */
+    color: white;
+    display: block; /* permet de donner des dimenssions*/
+    text-decoration: none;
+    border-right: 2px solid #dea;
+}
+ul#menu li a:hover{ /* on décale  l'image au survol de la souris*/
+     background: url(../img/bg_menu.gif) repeat-x 0 0;
+}
+div#contenu{
+    padding: 0 30px 0 100px;
+    background-image: url(../img/bg_page.gif);
+    background-repeat: no-repeat;
+    background-position: 15px 15px;
+}
+div#contenu h2{ /* mise en formetitre 2 */
+    padding-left: 25px; /* on decale le texte en fonction de l'image*/
+    line-height: 25px; /*  une inter-ligne (sera décalé à cause du padding)  */
+    font-size: 1.4em;
+    background: url(../img/litle_apple.gif) no-repeat left bottom;
+    color: #9b2;
+    border-bottom: 1px solid #b;
+}
+div#contenu h3{
+    margin-left: 15px;
+    padding-left: 5px;
+    border-bottom: 1px solid #9b2;
+    border-left: 3px solid 9b2;
+    color: #9b2;
+}
+div#contenu p{
+    text-align: justify; /* aligné le texte*/
+    text-indent: 2em; /*indentation supérieur à l'état normal*/
+    line-height: 1.7em;
+}
+p#footer{
+    margin: 0;
+    padding-right: 10px;
+    line-height: 30px;
+    text-align: right;
+    color: #8a0;
+}

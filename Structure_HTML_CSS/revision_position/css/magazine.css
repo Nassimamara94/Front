@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    background: lightgray;
+}
+h1{
+    font-size: 3em;
+    margin: 1em auto;
+    text-align: center;   
+}
+.premier{
+    width: 100%;
+}
+.premier div{
+    width: 30%;
+    height: 50px;
+    float: left;
+    background: indianred;
+}
+.premier div p{
+    text-align: justify;   
+}
+.premier figure{
+    width: 50%;
+    float: left;
+    background: green;
+}
+.premier figure img,figcaption{
+    display: inline-block;    
+}
+.premier figcaption{
+    width: 60%;
+    vertical-align: middle;
+    position: relative;
+    
+}
+.clear{
+    clear: both;
+}

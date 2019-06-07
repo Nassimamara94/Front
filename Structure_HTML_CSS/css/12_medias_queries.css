@@ -1,0 +1,178 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    border: 0.3vh solid;
+}
+header{ /*vh pour gérer le reponsive des éléments en hauteur (viewport height) et vw pour la largeur (viewport width*/
+    height: 6vh;
+    background: blue;
+    padding: 1vh;
+}
+nav{
+    height: 3vh;
+    background: red;
+    text-align: center;
+    font-size: 2vh;
+    color: #fff;  
+}
+/* nav cible les liens du menu, ils n'ont pas de taille donc ils occupent la place de leur contenu */
+nav a:hover{
+    background: #73cec8;
+    text-decoration: none; 
+    padding: 0.5% 0.8%;
+}
+.m1, .m2, .m3, .m4 {
+    height: 20vh;
+    width: 38%;
+    padding: 5%;
+    margin: 1%;
+    float: left;
+}
+.m1{
+    background: orange;
+}
+.m2{
+    background: green;
+}
+.m3{
+    background: yellow;
+}
+.m4{
+    background: pink;
+}
+footer{
+    height: 6vh;
+    background: blue;
+}
+/***** Responsive *****/
+
+@media(max-width:500px){
+    header{
+        height: 6vh;
+        background: #8E3557;
+    }
+    nav{
+        height: 3vh;
+        background: #046380;
+    }
+    .m1, .m2, .m3, .m4{
+        height: 20vh;
+        width: 86%;
+        margin: 0 auto;
+    }
+    .m1{
+        background: #B4AF91;
+    }
+    .m2{
+        background: #046380;
+    }
+    .m3{
+        background: #F6E497;
+    }
+    .m4{
+        background: #B5E655;
+    }
+    footer{
+        height: 6vh;
+        background: #8E3557;
+    }
+}
+@media(max-width:768px){
+    header{
+        height: 6vh;
+        background: #8E3557;
+    }
+    nav{
+        height: 3vh;
+        background: #046380;
+    }
+    .m1, .m2, .m3, .m4{
+        height: 20vh;
+        float: left;
+    }
+    .m1{
+        background: #B4AF91;
+    }
+    .m2{
+        background: #046380;
+    }
+    .m3{
+        background: #F6E497;
+    }
+    .m4{
+        background: #B5E655;
+    }
+    footer{
+        height: 7vh;
+        background: #8E3557;
+    }
+}
+@media(max-width:992px){
+    header{
+        height: 8vh;
+        background: #8E3557;
+    }
+    nav{
+        height: 4vh;
+        background: #046380;
+    }
+    .m1, .m2, .m3, .m4{
+        height: 30vh;
+        float: left;
+    }
+    .m1{
+        background: url(../images/image.jpg);
+        background-size: cover;
+    }
+    .m2{
+        background: #b7c40d;
+    }
+    .m3{
+        background: rgb(59, 13, 73);
+    }
+    .m4{
+        background: rgb(118, 173, 6);
+    }
+    footer{
+        height: 8vh;
+        background: rgb(233, 8, 184);
+    }
+}
+@media(max-width:1200px){
+    header{
+        height: 9vh;
+        background: #8E3557;
+    }
+    nav{
+        height: 4.5vh;
+        background: #046380;
+    }
+    .m1, .m2, .m3, .m4{
+        height: 40vh;
+        float: left;
+    }
+    .m1{
+        background: linear-gradient(to left, #40a497, #6840a4);
+      
+    }
+    .m2{
+        background: #353533;
+    }
+    .m3{
+        background: rgb(59, 13, 73);
+    }
+    .m4{
+        background: rgb(16, 1, 49);
+    }
+    footer{
+        height: 9vh;
+        background: rgb(209, 43, 43);
+    }
+}
+section{
+    margin: 1.5vh;
+}
+.clear{
+    clear: both;
+}

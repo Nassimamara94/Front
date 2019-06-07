@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Jquery Intro</title>
+    </head>
+    <style>
+        p{
+            font-size: 1.5rem;
+        }
+        li{
+            font-size: 1rem;
+        }
+        h1{
+            font-size: 2rem;
+        }
+        em{
+            color: red;
+        }
+    
+    </style>
+    <body>
+        <h1>Jquery Intro</h1>
+        <p><em><b>Write less Do More</b></em></p>
+        <p><b>JQUERY</b> C'est une bibliothèque de JavaScript, une boite à outils de bloque de code réutilisable. Rapite, petite (légère), riche en fonctionnalité. Simplifie la navigation et la manipulation dans le DOM (document HTML), la gestion des événements, l'annimation et AJAX grâce à une API. Fonctionne sur une multitude de navigateur.</p>
+        <p>JQUERY est codé en JavaScript</p>
+        <p>JQUERY a changé la façcon de travailler de millions de dev</p>
+        <p>
+            <ul>
+                <li>Fonction toutes faites, optimisées. Appel ajax, boucles, animations, toggle, </li>
+                <li>Résous les problèmes de compatibilité navigateur. Jquery a des polyfills intégrés.</li>
+                <li>Lecture de code plus simple</li>
+            </ul>
+        </p>
+        <h2>Millions de Pluggin additionnels</h2>
+        <p><i>Jquery UI</i>: User Interface. Versions actuelle UI 1.12</p>
+        <p>Ensemble d'interface Utilisateur, effets, de widgets, de thème à partir de JQUERY</p>
+        <p>si besoin de d'un sélecteur de date, juste aller le chercher sur Jquery UI. <a href="https://jqueryui.com/datepicker/" target="_blank">Date Picker</a></p>
+        <p>Jquery mobile Version 1.4.5 : est un eFramework UI optimisé pour les écran tactile.</p>
+        <hr>
+        <h1>Changer jQuery dans une page web</h1>
+        <p>La méthode la plus simple est de télécharger la librairie jquery.js <a href="https://jquery.com/">jQuery télécharger</a></p>
+        <pre>
+            <script src="cheminVersNotreFichierJQuery.js"></script>
+        </pre>
+        <hr>
+        <h1>Selectionner en jQuery</h1>
+        <p>Le coeur de jQuery se trouve dans la sélection d'éléments. Pour ensuite éxécuter du script dessus.</p>
+        <p>La commande $ comme selecteur accepte en argument tous les sélecteurs css</p>
+        <p>Nous renvoie ensuite une collection d'un ou plusieurs éléments DOM, enveloppés dans un objet jQuery</p>
+        <p>$('div') selectionne toutes les div</p>
+        <p>$('.titre') selectionne toutes les éléments avec la class titre</p>
+        <p>Cet enveloppe jQuery est celle qui donne acces à toutes les fonctionnalités de jQuery</p>
+        <ul>
+            <li>rajouter des class</li>
+            <li>modifier du contenu HTML</li>
+            <li>Afficher ou cacher des éléments</li>
+            <li>Les annimer</li>
+        </ul> <br>
+        <p>Tout les éléments sélectionnés en js pure 'getElemntById', 'querySelector' ect, sont des éléments DOM et tous ceux sélectionnés avec $('') sont des éléments DOM dans une enveloppe jQuery </p>
+        <hr>    
+        <h3>jQuery dispose de plusieurs méthodes pour parcourir l'arbre du document (DOM)</h3> 
+        <ul>
+            <li>children() : parcourt les enfants direct </li>
+            <li>find() parcourt les descendants</li>
+            <li>next() renvoie le voisin suivant</li>
+            <li>prev() renvoie le voisin précédent</li>
+            <li>parent() renvoie le parent</li>
+            <li>eq() renvoie parmi une liste d'éléments, celui qui se trouve à l'index fourni </li>
+            <li>children() sélectionne tous les enfants direct</li>
+        </ul>
+        <hr>
+        <h1>les getters et setters</h1>
+        <p>permet d'ajouter et retirer des class et savoir si on a déjà des class</p>
+        <ul>
+            <li>addClass() : ajoute une class</li>
+            <li>removeClass() : retire une class</li>
+            <li>toggleClass : Interupteur ajoute/ retire une class</li>
+            <li>hasClass : tester l'existence d'une class</li>
+            <li>is() : tester si on a plusieurs class</li>
+        </ul>
+        <br><br>
+        <p>hide() permet de cacher un élément</p>
+        <p>c'est une animation</p>
+        <p>s'applique à tous les éléments ciblés avec le selcteur</p>
+        <hr>
+        <h1>Les événement</h1>
+        <p>la plupart des interactions de l'utilisateur avec une page web peuvent être interceptés et une action lancé en retour. </p>
+        <p>On peut dire à une fonction de s'éxécuter, quand l'utilisateur click sur un bouton, ou bien quand il scroll dans la fenêtre, ou bien s'il appuie sur une touche du clavier.</p>
+        <ul>
+            <li>mouse:<br>1. au click sur l'élément<br>2. mouse enter : lorsque la souris passe par dessus la zone de l'élément <br>3. mouseleave: lorsque la souris sort de la zone de l'élément</li>
+            <li>keyboard: <br>1. keyDown quand une touche de clavier est enfoncée <br>2. keyUp lorsqu'une touche de clavier est relachée</li>
+            <li> window: <br>1. scrool: le défilemnt de la fenêtre <br>2. resize: le redimensionnement de la fenêtre</li>
+            <li>formulaire: <br>1. change: pour les éléments &lt;input&gt;, &lt;select&gt;,  et &lt;textarea&gt;, quand l'utilisateur change une valeur <br>2. focus et blur: lorsque la souris entre et sort de l'input</li>
+            <li>submit: à l'envoie du formulaire</li>
+            <li>DOM: <br>1. DOMContentLoaded : lorsque le DOM est complétement chargé et analyé sans attendre que les images et le css soient chargés</li>
+        </ul>
+
+    </body>
+    </html>

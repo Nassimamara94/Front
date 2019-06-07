@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Boîte de dialogue perso</title>
+            <style>
+                .msgBox{
+                    background: silver;
+                    width: 242px;
+                    height: 100px;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                }
+                .msgBox p{
+                    text-align: center;
+                    background: pink;
+                    padding: 10px 20px;
+                }
+                .msgBox button{
+                    position: absolute;
+                    top: 0;
+                    right:0;
+                }
+            </style>
+        </head>
+        <body>
+            <!-- <div class="msgBox">
+                <p>Message</p>
+                <button>X</button>
+            </div>        -->
+            <button id="btnAfficheDialog">Affiche la boite de dialogue</button>
+            <script>
+                 var btnOpenBox = document.getElementById('btnAfficheDialog');
+
+                function afficheMessage(){
+                    // on selectionne la balise body dans le DOM
+                     var body = document.querySelector('body');                
+                    // dans une var boiteDialogue on crée un élément div avec la méthode .createElement
+                    var boiteDialogue = document.createElement('div');
+                    // on ajoute un attribut class .msgBox à la boiteDialogue avec la méthode setAttribute('nom de l'attribut', 'et nouvelle valeur');
+                    boiteDialogue.setAttribute('class','msgBox');
+                    body.appendChild(boiteDialogue);
+                    // créer un paragrapghe 
+                    var pMessage = document.createElement('p');
+                    // créer le message dans le p
+                    pMessage.textContent = 'je suis une boîte de dialogue ';
+                    // ajoute ce p message comme enfant de la div
+                    boiteDialogue.appendChild(pMessage); 
+
+                    var closeButton = document.createElement('button');
+                    closeButton.textContent = 'X';
+                    pMessage.appendChild(closeButton);    
+                    closeButton.addEventListener('click', function(){
+                        boiteDialogue.parentNode.removeChild(boiteDialogue);
+                    })
+                }
+                     btnOpenBox.addEventListener('click', afficheMessage);
+            </script>
+        </body>
+    </html>
